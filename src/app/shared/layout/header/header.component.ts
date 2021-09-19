@@ -24,6 +24,11 @@ export class HeaderComponent implements OnInit {
         this.openHeader()
       }
     });
+
+    this.headerAnimator.getMode$().subscribe( mode => {
+      console.log('mode', mode)
+      this.nightMode = mode;
+    })
   }
 
   hideHeader() {

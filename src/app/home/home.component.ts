@@ -19,80 +19,170 @@ export class HomeComponent implements OnInit {
     private headerAnimator: HeaderAnimatorService
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.headerAnimator.changeMode(true)
+  }
 
+  // SCROLL UP //
   scrollUp() {
     if (this.pageIndex > 0 && this.transition == false) {
       this.transition = true;
-      this.pageUp();
+
+      this.pageIndex = this.pageIndex - 1;
+
+      // Running header animation
+      this.headerAnimator.activateAnimation(true);
+
+      if(this.pageIndex == 0) {
+        // If the user is going to the landing page
+        this.zoomInAnimation();
+      } else {
+        // If the user is not on the landing page
+        this.pageUpAnimation();
+      }
     }
   }
 
-  scrollDown() {
-    if (this.pageIndex < 2 && this.transition == false) {
-      this.transition = true;
-      this.pageDown();
-    }
-  }
-
-  pageDown() {
-    this.pageIndex = this.pageIndex + 1;
-    this.headerAnimator.activateAnimation(true);
-
+  pageUpAnimation() {
     anime({
-      targets: '#s' + this.pageIndex,
-      top: '-100vh',
-      duration: 850,
-      easing: 'easeInOutQuart',
-      endDelay: 100,
-      complete: () => {
-        this._cdr.detectChanges();
-      },
-    });
-
-    anime({
-      targets: '#s' + (this.pageIndex + 1),
-      top: '0vh',
-      duration: 850,
-      easing: 'easeInOutQuart',
-      endDelay: 100,
-      complete: () => {
-        this.headerAnimator.activateAnimation(false);
-        this.transition = false;
-        this._cdr.detectChanges();
-      },
-    });
-
-    console.log('index', this.pageIndex);
-  }
-
-  pageUp() {
-    this.pageIndex = this.pageIndex - 1;
-    this.headerAnimator.activateAnimation(true);
-
-    anime({
-      targets: '#s' + (this.pageIndex + 1),
+      targets: '#s' + (this.pageIndex),
       top: 0,
       duration: 850,
       easing: 'easeInOutQuart',
-      endDelay: 100,
-      complete: () => {
-        this._cdr.detectChanges();
-      },
+      endDelay: 100
     });
 
     anime({
-      targets: '#s' + (this.pageIndex + 2),
+      targets: '#s' + (this.pageIndex + 1),
       top: '100vh',
       duration: 850,
       easing: 'easeInOutQuart',
       endDelay: 100,
       complete: () => {
+        if (this.pageIndex == 0) {
+          this.headerAnimator.changeMode(true)
+        }
         this.headerAnimator.activateAnimation(false);
         this.transition = false;
         this._cdr.detectChanges();
       },
     });
-
   }
+
+  zoomInAnimation() {
+    anime({
+      targets: '#s1',
+      scale: 1,
+      duration: 850,
+      easing: 'easeInOutQuart',
+      endDelay: 100,
+      complete: () => {
+
+        // If the user is on the landing page, set the header to night mode
+        if (this.pageIndex == 0) {
+          this.headerAnimator.changeMode(true)
+        }
+
+        // Header down
+        this.headerAnimator.activateAnimation(false);
+        this.transition = false;
+        this._cdr.detectChanges();
+      },
+    });
+  }
+
+  // SCROLL DOWN //
+
+  /**
+   * Scroll down event handler
+   */
+  scrollDown() {
+    if (this.pageIndex < 3 && this.transition == false) {
+      this.transition = true;
+
+      this.pageIndex = this.pageIndex + 1;
+
+      // Running header animation
+      this.headerAnimator.activateAnimation(true);
+
+      if(this.pageIndex == 1) {
+        // If the user is on the landing page
+        this.zoomOutAnimation();
+      } else {
+        // If the user is not on the landing page
+        this.pageDownAnimation();
+      }
+    }
+  }
+
+  /**
+   * Animation that runs when the user scrolls down
+   */
+  pageDownAnimation() {
+    if (this.pageIndex == 2) {
+      anime({
+        targets: 'h2',
+        bottom: '-50vh',
+        duration: 600,
+        easing: 'easeInOutQuart',
+        endDelay: 100
+      })
+    }
+
+    anime({
+      targets: '#s' + (this.pageIndex - 1),
+      top: '-100vh',
+      duration: 850,
+      easing: 'easeInOutQuart',
+      endDelay: 100
+    });
+
+    anime({
+      targets: '#s' + (this.pageIndex),
+      top: '0vh',
+      duration: 850,
+      easing: 'easeInOutQuart',
+      endDelay: 100,
+      complete: () => {
+        if (this.pageIndex == 0) {
+          this.headerAnimator.changeMode(false)
+        }
+        this.headerAnimator.activateAnimation(false);
+        this.transition = false;
+        this._cdr.detectChanges();
+      },
+    });
+  }
+
+  zoomOutAnimation() {
+    anime({
+      targets: 'h2',
+      bottom: '-19vh',
+      duration: 850,
+      easing: 'easeInOutQuart',
+      delay: 500,
+      endDelay: 100
+    })
+
+    anime({
+      targets: '#s1',
+      scale: 0.7,
+      duration: 850,
+      easing: 'easeInOutQuart',
+      endDelay: 100,
+      complete: () => {
+
+        // If the user is on the landing page, set the header to night mode
+        if (this.pageIndex == 1) {
+          this.headerAnimator.changeMode(false)
+        }
+
+        // Header down
+        this.headerAnimator.activateAnimation(false);
+        this.transition = false;
+        this._cdr.detectChanges();
+      },
+    });
+  }
+
 }

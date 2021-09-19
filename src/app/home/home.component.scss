@@ -1,6 +1,8 @@
 main {
-    background-color: #fff;
-    -webkit-overflow-scrolling: touch;
+    background-color: #dadaef !important;
+    width: 100vw;
+    height: 100vh;
+    //-webkit-overflow-scrolling: touch;
 }
 
 .section {
@@ -11,20 +13,41 @@ main {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: #dadae4;
+    //background-color: #dadaef;
     z-index: 0;
+}
+
+h2 {
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+    bottom: -50vh;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #dadaef;
+    font-size: 25rem;
+    margin: 0;
 }
 
 #s1 {
     top: 0;
-    background-color: aqua;
+    //background-color: #dadaef;
+    background-color: #1c1c29;
+}
+
+#s1 > h1 {
+    color: #dadaef;
 }
 
 #s2 {
-    background-color: blue;
+    //background-color: #dadaef;
 }
 
 #s3 {
-    top: 100vh;
-    background-color: blueviolet;
+    //background-color: #dadaef;
+}
+
+h1 {
+    font-size: 12.5rem;
+    font-weight: 100;
 }
