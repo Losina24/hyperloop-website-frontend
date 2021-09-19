@@ -8,8 +8,6 @@ export class MouseWheelDirective {
     @Output() mouseWheelUp = new EventEmitter();
     @Output() mouseWheelDown = new EventEmitter();
 
-    // Listening to the host - that is, the DOM element the directive is attached to - is among the primary ways directives
-
     @HostListener('mousewheel', ['$event']) onMouseWheelChrome(event: any) {
         this.mouseWheelFunc(event)
     }

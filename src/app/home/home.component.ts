@@ -1,4 +1,6 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
+import { HeaderAnimatorService } from '../services/header-animator.service';
+
 // @ts-ignore
 import anime from 'animejs/lib/anime.es.js';
 
@@ -8,10 +10,14 @@ import anime from 'animejs/lib/anime.es.js';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+
   pageIndex: number = 0;
   transition: boolean = false;
 
-  constructor(private _cdr: ChangeDetectorRef) {}
+  constructor(
+    private _cdr: ChangeDetectorRef,
+    private headerAnimator: HeaderAnimatorService
+  ) {}
 
   ngOnInit(): void {}
 
@@ -19,7 +25,6 @@ export class HomeComponent implements OnInit {
     if (this.pageIndex > 0 && this.transition == false) {
       this.transition = true;
       this.pageUp();
-      console.log('mouseUp');
     }
   }
 
@@ -27,12 +32,12 @@ export class HomeComponent implements OnInit {
     if (this.pageIndex < 2 && this.transition == false) {
       this.transition = true;
       this.pageDown();
-      console.log('mouseDown');
     }
   }
 
   pageDown() {
     this.pageIndex = this.pageIndex + 1;
+    this.headerAnimator.activateAnimation(true);
 
     anime({
       targets: '#s' + this.pageIndex,
@@ -52,6 +57,7 @@ export class HomeComponent implements OnInit {
       easing: 'easeInOutQuart',
       endDelay: 100,
       complete: () => {
+        this.headerAnimator.activateAnimation(false);
         this.transition = false;
         this._cdr.detectChanges();
       },
@@ -62,8 +68,7 @@ export class HomeComponent implements OnInit {
 
   pageUp() {
     this.pageIndex = this.pageIndex - 1;
-    console.log('in1111dex', this.pageIndex);
-    
+    this.headerAnimator.activateAnimation(true);
 
     anime({
       targets: '#s' + (this.pageIndex + 1),
@@ -83,6 +88,7 @@ export class HomeComponent implements OnInit {
       easing: 'easeInOutQuart',
       endDelay: 100,
       complete: () => {
+        this.headerAnimator.activateAnimation(false);
         this.transition = false;
         this._cdr.detectChanges();
       },

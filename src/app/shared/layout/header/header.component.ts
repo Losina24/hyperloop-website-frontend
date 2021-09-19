@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 // @ts-ignore
 import anime from 'animejs/lib/anime.es.js';
+import { HeaderAnimatorService } from 'src/app/services/header-animator.service';
 
 @Component({
   selector: 'app-header',
@@ -11,16 +12,25 @@ export class HeaderComponent implements OnInit {
 
   nightMode: boolean = false;
 
-  constructor() { }
+  constructor(
+    private headerAnimator: HeaderAnimatorService
+  ) { }
 
   ngOnInit(): void {
+    this.headerAnimator.getAnimationActivator$().subscribe(status => {
+      if (status) {
+        this.hideHeader()
+      } else {
+        this.openHeader()
+      }
+    });
   }
 
   hideHeader() {
     anime({
       targets: 'header',
       translateY: -90,
-      duration: 600,
+      duration: 400,
       easing: 'easeInQuart'
     });
   }
@@ -29,7 +39,7 @@ export class HeaderComponent implements OnInit {
     anime({
       targets: 'header',
       translateY: 0,
-      duration: 600,
+      duration: 400,
       easing: 'easeOutQuart'
     });
   }
