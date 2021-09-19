@@ -1,0 +1,45 @@
+$white: #fff;
+$black: #000;
+$gray1: #dadae2;
+$gray2: #8f8fa3;
+$orange: #aa4e2f;
+$blue: #474875;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4.2rem;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 12rem;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    width: 5rem;
+}
+
+.logo > img {
+    width: 5rem;
+}
+
+.link-container {
+    display: inline;
+}
+
+.header-link {
+    font-size: 1.5rem;
+    margin-left: 3rem;
+}
+
+.header-link:first-of-type {
+    margin: 0;
+}
+
+.night {
+    color: $white;
+}

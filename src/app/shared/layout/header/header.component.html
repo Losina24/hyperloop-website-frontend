@@ -1,1 +1,12 @@
-<p>header works!</p>
+<header>
+    <a id="logoA" class="logo" routerLink="/" *ngIf="nightMode == false"><img src="/assets/logo-black.png" alt="Logo"></a>
+
+    <a class="logo" routerLink="/" *ngIf="nightMode == true"><img src="/assets/logo-white.png" alt="Logo"></a>
+
+    <div class="link-container">
+        <a routerLink="/team" class="header-link" [ngClass]="{'night': nightMode}">Equipo</a>
+        <a routerLink="/news" class="header-link" [ngClass]="{'night': nightMode}">Noticias</a>
+        <a routerLink="/sponsors" class="header-link" [ngClass]="{'night': nightMode}">Sponsors</a>
+        <a routerLink="/contact" class="header-link" [ngClass]="{'night': nightMode}">Contacto</a>
+    </div>
+</header>

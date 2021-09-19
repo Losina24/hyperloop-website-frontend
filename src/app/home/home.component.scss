@@ -1,0 +1,30 @@
+main {
+    background-color: #fff;
+    -webkit-overflow-scrolling: touch;
+}
+
+.section {
+    display: flex;
+    position: absolute;
+    top: 100vh;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #dadae4;
+    z-index: 0;
+}
+
+#s1 {
+    top: 0;
+    background-color: aqua;
+}
+
+#s2 {
+    background-color: blue;
+}
+
+#s3 {
+    top: 100vh;
+    background-color: blueviolet;
+}
