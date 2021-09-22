@@ -71,6 +71,15 @@ export class HomeComponent implements OnInit {
 
   zoomInAnimation() {
     anime({
+      targets: 'h2.nosotros',
+      bottom: '-50vh',
+      duration: 850,
+      easing: 'easeInOutQuart',
+      delay: 0,
+      endDelay: 100
+    })
+
+    anime({
       targets: '#s1',
       scale: 1,
       duration: 850,
@@ -97,7 +106,7 @@ export class HomeComponent implements OnInit {
    * Scroll down event handler
    */
   scrollDown() {
-    if (this.pageIndex < 3 && this.transition == false) {
+    if (this.pageIndex < 4 && this.transition == false) {
       this.transition = true;
 
       this.pageIndex = this.pageIndex + 1;
@@ -156,7 +165,7 @@ export class HomeComponent implements OnInit {
 
   zoomOutAnimation() {
     anime({
-      targets: 'h2',
+      targets: 'h2.nosotros',
       bottom: '-19vh',
       duration: 850,
       easing: 'easeInOutQuart',

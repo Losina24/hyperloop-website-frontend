@@ -1,8 +1,23 @@
 main {
-    background-color: #dadaef !important;
+    //background-color: #dadaef !important;
     width: 100vw;
     height: 100vh;
+    background: rgb(255,255,255);
+background: linear-gradient(149deg, rgba(255,255,255,1) 0%, rgba(218,218,226,1) 100%);
     //-webkit-overflow-scrolling: touch;
+}
+
+.landing-container{
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prototype {
+    margin-top: -2rem;
+    width: 75rem;
 }
 
 .section {
@@ -17,37 +32,119 @@ main {
     z-index: 0;
 }
 
-h2 {
+h2.nosotros {
     position: absolute;
     width: 100vw;
     text-align: center;
     bottom: -50vh;
     color: transparent;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #dadaef;
+    -webkit-text-stroke-color: #DADAE2;
     font-size: 25rem;
     margin: 0;
+    z-index: 2;
 }
 
 #s1 {
     top: 0;
     //background-color: #dadaef;
-    background-color: #1c1c29;
+    background-color: #020202;
+    overflow: hidden;
 }
 
 #s1 > h1 {
     color: #dadaef;
 }
 
-#s2 {
-    //background-color: #dadaef;
+#s3 {
+    flex-direction: row-reverse;
 }
 
-#s3 {
-    //background-color: #dadaef;
+#s3 > .section-txt {
+    margin-left: 2.5rem;
+    padding-right: 0;
+}
+
+#s3 > .section-image > img {
+    padding-right: 2.5rem;
 }
 
 h1 {
     font-size: 12.5rem;
     font-weight: 100;
+}
+
+.logo-ignis {
+    width: 75rem;
+    //margin-top: -6rem;
+    z-index: 2;
+    margin-bottom: -18rem;
+}
+
+.esquina-down {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80rem;
+    z-index: 1;
+}
+
+.esquina-up {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 55rem;
+    z-index: 1;
+}
+
+.section-image {
+    width: 48rem;
+    height: 44rem;
+    object-fit: cover;
+    margin-top: 3rem;
+}
+
+.section-txt > h2 {
+    display: inline;
+    width: min-content;
+    font-size: 8.2rem;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-bottom: 1.6rem;
+    
+    // Text color //
+    //background: -webkit-linear-gradient(#eee, #333);
+    background: rgb(170,78,47);
+background: linear-gradient(149deg, rgba(170,78,47,1) 0%, rgba(71,72,117,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-txt > h3 {
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+.section-txt > p {
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    line-height: 3.5rem;
+    padding-right: 1.6rem;
+}
+
+.section-separator {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.section-txt {
+    flex-direction: column;
+    padding: 6rem;
 }
