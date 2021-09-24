@@ -26,9 +26,12 @@ export class HeaderComponent implements OnInit {
     });
 
     this.headerAnimator.getMode$().subscribe( mode => {
-      console.log('mode', mode)
       this.nightMode = mode;
     })
+  }
+
+  resetNightMode() {
+    this.nightMode = false;
   }
 
   hideHeader() {

@@ -5,8 +5,8 @@
 
     <div class="link-container">
         <a routerLink="/team" class="header-link" [ngClass]="{'night': nightMode}">Equipo</a>
-        <a routerLink="/news" class="header-link" [ngClass]="{'night': nightMode}">Noticias</a>
+        <a (click)="resetNightMode()" routerLink="/noticias" class="header-link" [ngClass]="{'night': nightMode}">Noticias</a>
         <a routerLink="/sponsors" class="header-link" [ngClass]="{'night': nightMode}">Sponsors</a>
-        <a routerLink="/contact" class="header-link" [ngClass]="{'night': nightMode}">Contacto</a>
+        <a (click)="resetNightMode()" routerLink="/contacto" class="header-link" [ngClass]="{'night': nightMode}">Contacto</a>
     </div>
 </header>
