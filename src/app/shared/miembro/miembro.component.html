@@ -1,0 +1,11 @@
+<a  class="member-container">
+    
+    <div class="image-container" [ngClass]="big_team == true ? 'big-team' : ''">
+        <img src="../../../assets/javierpresmanescardama.png" alt="" [ngClass]="[style == 'square' ? 'square' : '',  style == 'rounded' ? 'rounded' : '', style == 'circle' ? 'circle' : '']">
+        <span>{{ member.emoji }}</span>
+    </div>
+
+    <h3 [ngClass]="big_team == true ? 'bt-h3' : ''">{{ member.name }}</h3>
+    <p [ngClass]="big_team == true ? 'bt-p' : ''">{{ member.position }}</p>
+
+</a>

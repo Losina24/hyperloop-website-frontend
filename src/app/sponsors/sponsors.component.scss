@@ -1,0 +1,131 @@
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(255,255,255);
+    background: linear-gradient(149deg, rgba(255,255,255,1) 0%, rgba(218,218,226,1) 100%);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 100vh;
+    position: absolute;
+    z-index: 1;
+}
+
+#s1 {
+    top: 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem 10rem 10rem;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 180rem;
+    height: calc(100vh - 24rem);
+    flex-wrap: wrap;
+}
+
+.logo-container-2, .logo-container-3, .logo-container-4 {
+    justify-content: center;
+}
+
+.logo-container > div {
+    width: 20%;
+}
+
+.logo-container-3 > div {
+    width: 12%;
+}
+
+.logo-container-4 > div {
+    width: 10%;
+}
+
+.logo-container > div > a {
+    width: 80%;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 32rem;
+    z-index: 2 !important;
+}
+
+.img-container-gold {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26rem;
+    z-index: 2 !important;
+}
+
+.logo-sponsor {
+    width: 90%;
+}
+
+#valenciacf {
+    width: 75%;
+}
+
+#upv {
+    width: 70%;
+}
+
+#we {
+    width: 70%;
+}
+
+.titles {
+    margin-top: 14rem;
+    height: 10rem;
+}
+
+#s2 > .titles, #s3 > .titles, #s4 > .titles {
+    margin-top: 13rem;
+}
+
+h1 {
+    font-size: 7rem;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background: rgb(170,78,47);
+    background: linear-gradient(149deg, rgba(170,78,47,1) 0%, rgba(71,72,117,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    font-size: 2.1rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.back-text {
+    position: fixed;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #0f0f0f15;
+    font-size: 50rem;
+    margin: 0;
+    z-index: 0;
+    font-weight: 500;
+    bottom: -20rem;
+    right: -85rem;
+}

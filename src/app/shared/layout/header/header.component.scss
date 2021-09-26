@@ -43,3 +43,103 @@ header {
 .night {
     color: $white;
 }
+
+#hamburger {
+    display: none;
+}
+
+#menu-lat {
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    height: 100vh;
+    width: 0;
+    top: 0;
+    right: 0;
+    background-color: $black;
+    z-index: 998;
+}
+
+#menu-lat > a {
+    color: $white;
+    margin: 0 0 2rem 3rem;
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+
+@media only screen and (max-width: 950px) {
+    header {
+        padding: 1rem 2.5rem;
+    }
+
+    #menu-lat {
+        display: flex;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    .hamburger .line {
+        width: 2.2rem;
+        height: 1px;
+        background-color: $black;
+        display: block;
+        margin: .6rem auto;
+        margin-left: 1.2rem;
+        border-radius: 10px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .hl {
+        background-color: $white !important;
+    }
+    .hamburger:hover {
+        cursor: pointer;
+    }
+    .scroll {
+        display: none;
+    }
+    #hamburger.is-active .line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    #hamburger.is-active .line:nth-child(1) {
+        -webkit-transform: translateY(13px) rotate(45deg);
+        -ms-transform: translateY(7px) rotate(45deg);
+        -o-transform: translateY(7px) rotate(45deg);
+        transform: translateY(7px) rotate(45deg);
+    }
+    
+    #hamburger.is-active .line:nth-child(3) {
+        -webkit-transform: translateY(-7px) rotate(-45deg);
+        -ms-transform: translateY(-7px) rotate(-45deg);
+        -o-transform: translateY(-7px) rotate(-45deg);
+        transform: translateY(-7px) rotate(-45deg);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 9rem;
+        background-color: transparent;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+    }
+}

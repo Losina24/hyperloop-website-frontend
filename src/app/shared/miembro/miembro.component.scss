@@ -1,0 +1,77 @@
+.member-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container, .square {
+    position: relative;
+    max-width: 21.3rem;
+    max-height: 21.3rem;
+    overflow: hidden;
+}
+
+span {
+    position: absolute;
+    top: -8rem;
+    font-size: 5rem;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.circle {
+    border-radius: 100rem;
+}
+
+.rounded {
+    border-radius: 2.5rem;
+}
+
+.big-team {
+    width: 18rem;
+    height: 18rem;
+}
+
+h3 {
+    margin: 0;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+p {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+
+.bt-h3 {
+    margin: 0;
+    margin-top: 1.2rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.bt-p {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    .image-container, .square {
+        width: 17rem;
+        height: 17rem;
+    }
+    .big-team {
+        width: 16rem;
+        height: 16rem;
+    }
+}

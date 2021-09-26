@@ -10,6 +10,9 @@ import { NoticiasComponent } from './noticias/noticias.component';
 import { NewsMiniatureComponent } from './shared/news-miniature/news-miniature.component';
 import { NoticiaComponent } from './noticia/noticia.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { SponsorsComponent } from './sponsors/sponsors.component';
+import { EquipoComponent } from './equipo/equipo.component';
+//import { MouseWheelDirective } from './shared/directives/mousewheel.directive';
 
 @NgModule({
   declarations: [
@@ -19,14 +22,18 @@ import { ContactoComponent } from './contacto/contacto.component';
     NoticiasComponent,
     NewsMiniatureComponent,
     NoticiaComponent,
-    ContactoComponent
+    ContactoComponent,
+    SponsorsComponent,
+    EquipoComponent,
+    //MouseWheelDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
