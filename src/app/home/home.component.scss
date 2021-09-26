@@ -1,0 +1,485 @@
+main {
+    //background-color: #dadaef !important;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(149deg, rgba(255,255,255,1) 0%, rgba(218,218,226,1) 100%);
+    overflow-x: hidden;
+}
+
+.landing-container{
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prototype {
+    margin-top: -2rem;
+    width: 75rem;
+}
+
+.section {
+    display: flex;
+    position: absolute;
+    top: 100vh;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    //background-color: #dadaef;
+    z-index: 0;
+}
+
+h2.nosotros {
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+    bottom: -50vh;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #DADAE2;
+    font-size: 25rem;
+    margin: 0;
+    z-index: 2;
+}
+
+#s1 {
+    top: 0;
+    //background-color: #dadaef;
+    background-color: #020202;
+    overflow: hidden;
+}
+
+#s1 > h1 {
+    color: #dadaef;
+}
+
+#s3 {
+    flex-direction: row-reverse;
+}
+
+#s3 > .section-txt {
+    margin-left: 2.5rem;
+    padding-right: 0;
+}
+
+#s3 > .section-image > img {
+    padding-right: 2.5rem;
+}
+
+h1 {
+    font-size: 12.5rem;
+    font-weight: 100;
+}
+
+.logo-ignis {
+    width: 75rem;
+    //margin-top: -6rem;
+    z-index: 2;
+    margin-bottom: -18rem;
+}
+
+.esquina-down {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 80rem;
+    z-index: 1;
+}
+
+.esquina-up {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 55rem;
+    z-index: 1;
+}
+
+.section-image {
+    width: 48rem;
+    height: 44rem;
+    object-fit: cover;
+    margin-top: 3rem;
+}
+
+.section-txt > h2 {
+    display: inline;
+    width: min-content;
+    font-size: 8.2rem;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-bottom: 1.6rem;
+
+    background: rgb(170,78,47);
+    background: linear-gradient(149deg, rgba(170,78,47,1) 0%, rgba(71,72,117,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-txt > h3 {
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+.section-txt > p {
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    line-height: 3.5rem;
+    padding-right: 1.6rem;
+}
+
+.section-separator {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.section-txt {
+    flex-direction: column;
+    padding: 6rem;
+}
+
+@media only screen and (max-width: 1130px) {
+    .logo-ignis {
+        width: 50rem;
+        z-index: 2;
+        margin-bottom: -20rem;
+
+    }
+
+    .prototype {
+        margin-top: 6rem;
+        margin-bottom: -2rem;
+        width: 60rem;
+    }
+
+    .esquina-down {
+        width: 68rem;
+    }
+    
+    .esquina-up {
+        width: 45rem;
+    }
+
+    h2.nosotros {
+        bottom: -50vh;
+        font-size: 24rem;
+        margin: 0;
+    }
+
+    .section-image {
+        width: 40rem;
+        height: 38rem;
+        margin-top: 3.5rem;
+    }
+
+    .section-txt > h2 {
+        font-size: 7.5rem;
+        margin-bottom: 1.45rem;
+    }
+    
+    .section-txt > h3 {
+        font-size: 1.8rem;
+        margin-bottom: 2.2rem;
+    }
+    
+    .section-txt > p {
+        font-size: 1.9rem;
+        margin: 0;
+        line-height: 3.2rem;
+        padding-right: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .logo-ignis {
+        margin-bottom: -22rem;
+    }
+
+    .prototype {
+        margin-top: 8rem;
+        margin-bottom: -8rem;
+    }
+
+    .esquina-down {
+        width: 45rem;
+    }
+    
+    .esquina-up {
+        width: 35rem;
+    }
+
+    h2.nosotros {
+        font-size: 20rem;
+        z-index: 10;
+    }
+
+    .section-image {
+        width: 35rem;
+        height: 32rem;
+        margin-top: 4rem;
+    }
+
+    .section-txt {
+        padding: 6rem 3.5rem;
+    }
+
+    .section-txt > h2 {
+        font-size: 6rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .section-txt > h3 {
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
+        margin-top: 2rem;
+    }
+    
+    .section-txt > p {
+        font-size: 1.8rem;
+        margin: 0;
+        line-height: 3rem;
+        padding-right: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 850px) and (orientation: landscape) {
+    .section, #s2, #s3, #s4, #s5 {
+        flex-direction: column-reverse;
+    }
+
+    #s2 .section-separator, #s3 .section-separator, #s4 .section-separator, #s5 .section-separator {
+        margin-left: 0;
+        padding: 1.5rem 3.5rem;
+    }
+
+    .section-separator {
+        width: 90%;
+    }
+
+    .logo-ignis {
+        margin-bottom: -22rem;
+    }
+
+    .prototype {
+        margin-top: 8rem;
+        margin-bottom: -8rem;
+    }
+
+    .esquina-down {
+        width: 45rem;
+    }
+    
+    .esquina-up {
+        width: 35rem;
+    }
+
+    h2.nosotros {
+        font-size: 20rem;
+        z-index: 10;
+    }
+
+    .section-image {
+        width: 100%;
+        height: 100%;
+        max-width: 45rem;
+        max-height: 38rem;
+        margin-top: 4rem;
+    }
+
+    .section-txt {
+        padding: 1.5rem 3.5rem;
+        align-items: center;
+    }
+
+    .section-txt > h2 {
+        font-size: 10rem;
+        margin-bottom: 1.8rem;
+    }
+    
+    .section-txt > h3 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        margin-top: 0rem;
+    }
+    
+    .section-txt > p {
+        font-size: 2.6rem;
+        margin: 0;
+        line-height: 3.7rem;
+        padding-right: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 850px) and (orientation: portrait) {
+    .section, #s2, #s3, #s4, #s5 {
+        flex-direction: column-reverse;
+    }
+
+    #s2 .section-separator, #s3 .section-separator, #s4 .section-separator, #s5 .section-separator {
+        margin-left: 0;
+        padding: 1.5rem 3.5rem;
+    }
+
+    .section-separator {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    h2.nosotros {
+        display: none;
+    }
+
+    .section-image {
+        width: 100%;
+        height: 100%;
+        max-width: 45rem;
+        max-height: 35rem;
+        margin-top: 2rem;
+    }
+
+    .section-txt {
+        padding: 1.5rem 3.5rem;
+        align-items: center;
+    }
+
+    .section-txt > h2 {
+        font-size: 6.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .section-txt > h3 {
+        font-size: 2.1rem;
+        margin-bottom: 0;
+        margin-top: 1rem;
+    }
+    
+    .section-txt > p {
+        font-size: 1.9rem;
+        margin: 0;
+        line-height: 3.1rem;
+        padding-right: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .logo-ignis {
+        margin-bottom: -17rem;
+        width: 34rem;
+    }
+
+    .prototype {
+        margin-top: 8rem;
+        margin-bottom: -4rem;
+        width: 40rem;
+    }
+
+    .esquina-down {
+        width: 35rem;
+    }
+    
+    .esquina-up {
+        width: 25rem;
+    }
+
+    #s2 .section-separator, #s3 .section-separator, #s4 .section-separator, #s5 .section-separator {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .section-separator {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .section-image {
+        width: 100%;
+        height: 100%;
+        max-width: 32rem;
+        max-height: 20rem;
+        margin-top: 1rem;
+    }
+
+    .section-txt > h2 {
+        font-size: 5.5rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .section-txt > h3 {
+        font-size: 1.8rem;
+        margin-bottom: 0;
+        margin-top: 3rem;
+    }
+    
+    .section-txt > p {
+        font-size: 1.7rem;
+        margin: 0;
+        line-height: 3.1rem;
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .logo-ignis {
+        margin-bottom: -12rem;
+        width: 26rem;
+    }
+
+    .prototype {
+        margin-top: 5rem;
+        margin-bottom: -4rem;
+        width: 35rem;
+    }
+
+    .esquina-down {
+        width: 25rem;
+    }
+    
+    .esquina-up {
+        width: 20rem;
+    }
+
+    .section-separator {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .section-image {
+        width: 90%;
+        height: 90%;
+        max-width: 25rem;
+        max-height: 20rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .section-txt > h2 {
+        font-size: 5rem;
+        margin-bottom: 0rem;
+    }
+    
+    .section-txt > h3 {
+        font-size: 1.6rem;
+        margin-bottom: 0;
+        margin-top: 3.2rem;
+    }
+    
+    .section-txt > p {
+        font-size: 1.4rem;
+        margin: 0;
+        line-height: 2rem;
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+}

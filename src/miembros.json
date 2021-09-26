@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "alias": "FAV",
+        "name": "Ferran de Andrés Vert",
+        "position": "Lead",
+        "image": "ferran.png",
+        "link": "https://linkedin.com/in/",
+        "emoji": "😎"
+    },
+    {
+        "id": 2,
+        "alias": "JLL",
+        "name": "Jose Luis Lores",
+        "position": "Project Manager",
+        "image": "joseluisl.png",
+        "link": "https://linkedin.com/in/",
+        "emoji": "😎"
+    },
+    {
+        "id": 3,
+        "alias": "AGG",
+        "name": "Amparo García González",
+        "position": "Project Manager",
+        "image": "amparogg.png",
+        "link": "https://linkedin.com/in/",
+        "emoji": "🐢"
+    },
+
+    {
+        "id": 4,
+        "alias": "MEP",
+        "name": "Mara Estruch Pellicer",
+        "position": "Partners",
+        "image": "maraep.png",
+        "link": "https://linkedin.com/in/mara-estruch-pellicer",
+        "emoji": "🤩"
+    },
+    {
+        "id": 5,
+        "alias": "HAB",
+        "name": "Hugo Albert Bonet",
+        "position": "Partners",
+        "image": "hugoab.png",
+        "link": "https://www.linkedin.com/in/hugoalbert",
+        "emoji": "❄️"
+    }
+]

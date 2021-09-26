@@ -1,1 +1,25 @@
-<p>header works!</p>
+<header>
+    <a id="logoA" class="logo" routerLink="/" *ngIf="nightMode == false"><img src="/assets/logo-black.png" alt="Logo"></a>
+
+    <a class="logo" routerLink="/" *ngIf="nightMode == true"><img src="/assets/logo-white.png" alt="Logo"></a>
+
+    <div id="menu" class="link-container">
+        <a (click)="resetNightMode()" routerLink="/equipo" class="header-link" [ngClass]="{'night': nightMode}">Equipo</a>
+        <a (click)="resetNightMode()" routerLink="/noticias" class="header-link" [ngClass]="{'night': nightMode}">Noticias</a>
+        <a (click)="resetNightMode()" routerLink="/sponsors" class="header-link" [ngClass]="{'night': nightMode}">Sponsors</a>
+        <a (click)="resetNightMode()" routerLink="/contacto" class="header-link" [ngClass]="{'night': nightMode}">Contacto</a>
+    </div>
+
+    <div [ngClass]="{'is-active': hamburgerMenu}" (click)="hamburger()" class="hamburger" id="hamburger">
+        <span [ngClass]="{'hl': nightMode}" class="line"></span>
+        <span [ngClass]="{'hl': nightMode}" class="line"></span>
+        <span [ngClass]="{'hl': nightMode}" class="line"></span>
+    </div> 
+</header>
+
+<nav [ngClass]="{'d-none': hamburgerMenu == false}"  id="menu-lat">
+    <a (click)="resetNightMode()" routerLink="/equipo" class="header-link">Equipo</a>
+    ¡<a (click)="resetNightMode()" routerLink="/noticias" class="header-link">Noticias</a>
+    ¡<a (click)="resetNightMode()" routerLink="/sponsors" class="header-link">Sponsors</a>
+    ¡<a (click)="resetNightMode()" routerLink="/contacto" class="header-link">Contacto</a>
+</nav>

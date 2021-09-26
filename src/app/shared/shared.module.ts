@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { MouseWheelDirective } from './directives/mousewheel.directive';
+import { MiembroComponent } from './miembro/miembro.component';
 
 @NgModule({
   imports: [
@@ -13,13 +15,17 @@ import { RouterModule } from '@angular/router';
     RouterModule
   ],
   declarations: [
+    MouseWheelDirective,
+    MiembroComponent
   ],
   exports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    MouseWheelDirective,
+    MiembroComponent
   ]
 })
 export class SharedModule {}
