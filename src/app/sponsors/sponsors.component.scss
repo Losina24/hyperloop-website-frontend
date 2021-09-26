@@ -9,6 +9,18 @@ main {
     background: linear-gradient(149deg, rgba(255,255,255,1) 0%, rgba(218,218,226,1) 100%);
 }
 
+#desktop {
+    display: flex;
+}
+
+#mobile {
+    display: none;
+    position: relative;
+    height: auto;
+    overflow: auto;
+    background-color: transparent;
+}
+
 .section {
     display: flex;
     flex-direction: column;
@@ -17,7 +29,17 @@ main {
     height: 100vh;
     top: 100vh;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
+}
+
+#mobile > .section {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    top: auto;
+    position: relative;
+    z-index: 3;
 }
 
 #s1 {
@@ -54,6 +76,10 @@ main {
 
 .logo-container > div > a {
     width: 80%;
+}
+
+#mobile > .section > .logo-container-2 > div {
+    width: 18%;
 }
 
 .img-container {
@@ -124,8 +150,133 @@ h2 {
     -webkit-text-stroke-color: #0f0f0f15;
     font-size: 50rem;
     margin: 0;
-    z-index: 0;
+    z-index: 1;
     font-weight: 500;
     bottom: -20rem;
     right: -85rem;
+}
+
+.background {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(149deg, rgba(255,255,255,1) 0%, rgba(218,218,226,1) 100%);
+    z-index: 0;
+}
+
+#mobile > .section > .logo-container {
+    justify-content: center;
+    align-items: center;
+}
+
+#mobile > .section:last-of-type {
+    padding-bottom: 5rem;
+}
+
+@media only screen and (max-width: 1400px) {
+    .titles {
+        margin-top: 10rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .logo-container > div {
+        width: 20%;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 6rem 6rem 6rem;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 140rem;
+        height: calc(100vh - 24rem);
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 985px) {
+    #desktop {
+        display: none;
+    }
+
+    #mobile {
+        display: flex;
+    }
+
+    .logo-container > div {
+        width: 10rem;
+        height: auto;
+    }
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .img-container {
+        width: 25rem;
+        height: 25rem;
+    }
+    .titles {
+        margin-top: 6rem;
+        height: 6rem;
+    }
+    #mobile > .section:first-of-type > .titles {
+        margin-top: 8rem;
+    }
+    h1 {
+        font-size: 5.5rem;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        background: rgb(170,78,47);
+        background: linear-gradient(149deg, rgba(170,78,47,1) 0%, rgba(71,72,117,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+    }
+    h2 {
+        margin: 0;
+        font-size: 1.6rem;
+        font-weight: 200;
+        text-align: center;
+    }
+    #mobile > .section > .logo-container > div {
+        width: 8rem;
+        margin-top: .6rem;
+    }
+    #mobile > .section > .logo-container-2 > div {
+        width: 15rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .logo-container > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    .titles {
+        margin-top: 2.5rem;
+        height: 4rem;
+    }
 }

@@ -34,7 +34,11 @@ export class HeaderComponent implements OnInit {
 
   resetNightMode() {
     this.nightMode = false;
-    this.hamburger();
+
+    if(this.hamburgerMenu) {
+      this.hamburger();
+    }
+    //this.hamburgerMenu = false;
   }
 
   hideHeader() {
@@ -126,5 +130,7 @@ export class HeaderComponent implements OnInit {
       });
     }
     this.hamburgerMenu = !this.hamburgerMenu;
+    console.log(this.hamburgerMenu);
+    
   }
 }

@@ -1,10 +1,12 @@
 img {
     background-color: #202020;
+    object-fit: cover;
     width: 38rem;
     height: 26rem;
     position: relative;
     z-index: 2;
     filter: grayscale(.9) contrast(75%) brightness(90%) saturate(70%);
+    transition: .3s ease-in-out;
 }
 .news-mini {
     display: flex;
@@ -30,6 +32,10 @@ a:hover > .news-back {
     margin-top: .5rem;
 }
 
+a:hover img {
+    filter: grayscale(.1) contrast(100%) brightness(100%) saturate(100%);
+}
+
 .news-back > p {
     margin: 0;
     color: #fff;
@@ -42,4 +48,34 @@ a:hover > .news-back {
 
 .fecha {
     font-weight: 200;
+}
+
+@media only screen and (max-width: 1300px) {
+    img {
+        width: 32rem;
+        height: 20rem;
+    }
+
+    .news-back {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 32rem;
+        height: 20rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    img {
+        width: 28rem;
+        height: 16rem;
+    }
+
+    .news-back {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 28rem;
+        height: 16rem;
+    }
 }

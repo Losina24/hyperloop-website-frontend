@@ -66,3 +66,24 @@ h1 {
     bottom: -20rem;
     right: -60rem;
 }
+
+@media only screen and (max-width: 985px) {
+    .news-section {
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .not-1 {
+        margin-top: 0;
+    }
+
+    .not-2 {
+        margin-top: 5rem;
+    }
+    
+    .not-3 {
+        margin-top: 5rem;
+    }
+}
