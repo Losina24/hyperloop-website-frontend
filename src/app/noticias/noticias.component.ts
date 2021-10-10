@@ -13,6 +13,17 @@ export class NoticiasComponent implements OnInit {
   pageIndex: number = 0;
   transition: boolean = false;
 
+  texts = {
+    en: {
+      noticias: 'News',
+      noNoticias: 'No news yet',
+    },
+    es: {
+      noticias: 'Noticias',
+      noNoticias: 'No hay noticias todavía',
+    }
+  }
+
   constructor(
     private _cdr: ChangeDetectorRef,
     private headerAnimator: HeaderAnimatorService
@@ -28,5 +39,11 @@ export class NoticiasComponent implements OnInit {
 
   scrollDown() {
     this.headerAnimator.activateAnimation(true);
+  }
+
+  getTranslation(text: string) {
+    let lang = sessionStorage.getItem('lang');
+    //@ts-ignore
+    return this.texts[lang][text];
   }
 }

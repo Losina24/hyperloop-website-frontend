@@ -1,28 +1,28 @@
 <section class="contact-container">
-    <h1>Contacto</h1>
+    <h1>{{ getTranslation('contacto') }}</h1>
 
     <div class="contact-form-container">
         <form>
             <div class="input-div">
-                <label for="name">Nombre:</label>
-                <input type="text" placeholder="Escribe tu nombre">
+                <label for="name">{{ getTranslation('nombre') }}:</label>
+                <input type="text" placeholder="{{ getTranslation('escribeNombre') }}">
             </div>
 
             <div class="input-div">
-                <label for="subject">Asunto:</label>
-                <input type="text" placeholder="Escribe un asunto">
+                <label for="subject">{{ getTranslation('asunto') }}:</label>
+                <input type="text" placeholder="{{ getTranslation('escribeAsunto') }}">
             </div>
 
             <div class="input-div">
-                <label for="name">Mensaje:</label>
-                <textarea name="" placeholder="Cuerpo del mensaje" rows="4"></textarea>
+                <label for="name">{{ getTranslation('mensaje') }}:</label>
+                <textarea name="" placeholder="{{ getTranslation('cuerpoMensaje') }}" rows="4"></textarea>
             </div>
 
             <div class="form-bottom">
-                <p class="send-requirements">Al enviar aceptas que Hyperloop UPV almacene tus datos</p>
+                <p class="send-requirements">{{ getTranslation('aceptar') }}</p>
 
                 <button class="send-btn">
-                    Enviar
+                    {{ getTranslation('enviar') }}
                     <img class="flecha" src="../../assets/arrow.svg">
                 </button>
             </div>

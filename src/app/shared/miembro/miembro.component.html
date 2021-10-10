@@ -1,8 +1,10 @@
-<a  class="member-container">
-    
+<a  class="member-container">    
     <div class="image-container" [ngClass]="big_team == true ? 'big-team' : ''">
-        <img src="../../../assets/javierpresmanescardama.png" alt="" [ngClass]="[style == 'square' ? 'square' : '',  style == 'rounded' ? 'rounded' : '', style == 'circle' ? 'circle' : '']">
-        <span>{{ member.emoji }}</span>
+        <img src="../../../assets/{{member.image}}" alt="" [ngClass]="[style == 'square' ? 'square' : '',  style == 'rounded' ? 'rounded' : '', style == 'circle' ? 'circle' : '']">
+
+        <div [ngClass]="[style == 'square' ? 'square' : '',  style == 'rounded' ? 'rounded' : '', style == 'circle' ? 'circle' : '']" class="emoji">
+            <p>{{ member.emoji }}</p>
+        </div>
     </div>
 
     <h3 [ngClass]="big_team == true ? 'bt-h3' : ''">{{ member.name }}</h3>

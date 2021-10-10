@@ -6,6 +6,7 @@ import { NoticiaComponent } from './noticia/noticia.component';
 import { NoticiasComponent } from './noticias/noticias.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { EquipoComponent } from './equipo/equipo.component';
+import { AcercaComponent } from './acerca/acerca.component';
 
 const routes: Routes = [
   { path: '', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'noticias/:id', component: NoticiaComponent },
   { path: 'contacto', component: ContactoComponent },
   { path: 'sponsors', component: SponsorsComponent },
-  { path: 'equipo', component: EquipoComponent }
+  { path: 'equipo', component: EquipoComponent },
+  { path: 'acerca', component: AcercaComponent },
 ];
 
 @NgModule({

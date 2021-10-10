@@ -1,48 +1,182 @@
 [
     {
         "id": 1,
-        "alias": "FAV",
-        "name": "Ferran de Andrés Vert",
-        "position": "Lead",
-        "image": "ferran.png",
-        "link": "https://linkedin.com/in/",
-        "emoji": "😎"
+        "alias": "MCM",
+        "name": "María Cuesta Martín",
+        "subsystem": "Direction",
+        "position": "Team Lead",
+        "image": "maria.png",
+        "link": "https://www.linkedin.com/in/mar%C3%ADa-cuesta-mart%C3%ADn/",
+        "emoji": "👥"
     },
     {
         "id": 2,
-        "alias": "JLL",
-        "name": "Jose Luis Lores",
-        "position": "Project Manager",
-        "image": "joseluisl.png",
-        "link": "https://linkedin.com/in/",
+        "alias": "FAV",
+        "name": "Ferran de Andrés Vert",
+        "subsystem": "Collaborators",
+        "position": "Collaborator",
+        "image": "fav.png",
+        "link": "https://www.linkedin.com/in/ferrandeandres/",
         "emoji": "😎"
     },
     {
         "id": 3,
-        "alias": "AGG",
-        "name": "Amparo García González",
-        "position": "Project Manager",
-        "image": "amparogg.png",
-        "link": "https://linkedin.com/in/",
-        "emoji": "🐢"
+        "alias": "MPN",
+        "name": "Miquel Pérez Nebot",
+        "subsystem": "Collaborators",
+        "position": "Collaborator",
+        "image": "Miquel_Perez.png",
+        "link": "https://www.linkedin.com/in/miquel-p%C3%A9rez-nebot-5a1bbb149/",
+        "emoji": "😎"
     },
-
     {
         "id": 4,
-        "alias": "MEP",
-        "name": "Mara Estruch Pellicer",
-        "position": "Partners",
-        "image": "maraep.png",
-        "link": "https://linkedin.com/in/mara-estruch-pellicer",
-        "emoji": "🤩"
+        "alias": "VDR",
+        "name": "Vicente Dolz Ruíz",
+        "subsystem": "Faculty Advisor",
+        "position": "Faculty Advisor",
+        "image": "Miquel_Perez.png",
+        "link": "https://www.linkedin.com/in/vicente-dolz-ruiz-b8a155162/",
+        "emoji": "😎"
     },
     {
         "id": 5,
-        "alias": "HAB",
-        "name": "Hugo Albert Bonet",
-        "position": "Partners",
-        "image": "hugoab.png",
-        "link": "https://www.linkedin.com/in/hugoalbert",
-        "emoji": "❄️"
+        "alias": "JPC",
+        "name": "Javier Presmanes Cardama",
+        "subsystem": "Sense & Control",
+        "position": "S&C Lead",
+        "image": "javierpresmanescardama.png",
+        "link": "https://www.linkedin.com/in/javierpresmanescardama/",
+        "emoji": "😎"
+    },
+    {
+        "id": 6,
+        "alias": "ARA",
+        "name": "Alvaro Rey Antón",
+        "subsystem": "Sense & Control",
+        "position": "Firmware",
+        "image": "Alvaro_Rey.png",
+        "link": "https://www.linkedin.com/in/reyantonalvaro/",
+        "emoji": "😎"
+    },
+    {
+        "id": 7,
+        "alias": "AGG",
+        "name": "Amparo García González",
+        "subsystem": "Outreach",
+        "position": "Outreach Lead",
+        "image": "Amparo_Garcia.png",
+        "link": "https://www.linkedin.com/in/amparogargon/",
+        "emoji": "🐢"
+    },
+    {
+        "id": 8,
+        "alias": "APC",
+        "name": "Ariadna Presmanes Cardama",
+        "subsystem": "Outreach",
+        "position": "Media & Design",
+        "image": "Amparo_Garcia.png",
+        "link": "https://www.linkedin.com/in/amparogargon/",
+        "emoji": "😎"
+    },
+    {
+        "id": 9,
+        "alias": "JMI",
+        "name": "Josep Balbino Martínez",
+        "subsystem": "Direction",
+        "position": "Technical Director",
+        "image": "josep.png",
+        "link": "https://www.linkedin.com/in/josepbalbino/",
+        "emoji": "😎"
+    },
+    {
+        "id": 10,
+        "alias": "FZM",
+        "name": "Felipe Zaballa Martínez",
+        "subsystem": "Economics",
+        "position": "Treasurer",
+        "image": "Josep_Balbino.png",
+        "link": "https://www.linkedin.com/in/felipe-zaballa-mart%C3%ADnez/",
+        "emoji": "😎"
+    },
+    {
+        "id": 11,
+        "alias": "VAN",
+        "name": "Virginio Alcalde Navarro",
+        "subsystem": "Economics",
+        "position": "Economics",
+        "image": "Josep_Balbino.png",
+        "link": "https://www.linkedin.com/in/felipe-zaballa-mart%C3%ADnez/",
+        "emoji": "😎"
+    },
+    {
+        "id": 12,
+        "alias": "JLG",
+        "name": "Javier Luján González",
+        "subsystem": "Direction",
+        "position": "Technical Director",
+        "image": "lujan.png",
+        "link": "https://www.linkedin.com/in/javierlujangonz/",
+        "emoji": "😎"
+    },
+    {
+        "id": 13,
+        "alias": "LIA",
+        "name": "Laura Ibáñez Arlandis",
+        "subsystem": "Mechanics",
+        "position": "Suspension Engineer",
+        "image": "Laura_Ibañez.png",
+        "link": "https://www.linkedin.com/in/laura-ib%C3%A1%C3%B1ez-arlandis-4a703b1ab/",
+        "emoji": "😎"
+    },
+    {
+        "id": 14,
+        "alias": "JLS",
+        "name": "Jose Luis Lores Sánchez",
+        "subsystem": "Mechanics",
+        "position": "Mechanics Lead",
+        "image": "Jose_Lores.png",
+        "link": "https://www.linkedin.com/in/joseluislores/",
+        "emoji": "😎"
+    },
+    {
+        "id": 15,
+        "alias": "VSO",
+        "name": "Victorio Sanchis Ortolá",
+        "subsystem": "Collaborators",
+        "position": "Collaborator",
+        "image": "Victorio_Sanchis.png",
+        "link": "https://www.linkedin.com/in/joseluislores/",
+        "emoji": "😎"
+    },
+    {
+        "id": 16,
+        "alias": "ENA",
+        "name": "Enrique Navarro Atienza",
+        "subsystem": "Partners",
+        "position": "Partners Lead",
+        "image": "Kike_Navarro.png",
+        "link": "https://www.linkedin.com/in/enriquenavarroatienza/",
+        "emoji": "😎"
+    },
+    {
+        "id": 17,
+        "alias": "CMS",
+        "name": "Clara Montalva Sanjuan",
+        "subsystem": "Outreach",
+        "position": "Marketing strategist",
+        "image": "Clara_Montalva.png",
+        "link": "https://www.linkedin.com/in/clara-montalva-sanjuan-1073b4140/",
+        "emoji": "😎"
+    },
+    {
+        "id": 18,
+        "alias": "DGC",
+        "name": "Daniel González Castiñeiras",
+        "subsystem": "Sense & Control",
+        "position": "Software",
+        "image": "dani.png",
+        "link": "https://www.linkedin.com/in/daniel-gonzalez-casti%C3%B1eiras-24786b1b8/",
+        "emoji": "🎸"
     }
 ]

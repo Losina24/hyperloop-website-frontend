@@ -21,6 +21,7 @@ html {
     margin-top: 5rem;
     width: 100vw;
     flex-direction: column;
+    min-height: calc(100vh - 24rem);
 }
 
 .news-section {
@@ -67,12 +68,43 @@ h1 {
     right: -60rem;
 }
 
+.news-list > p {
+    display: flex;
+    align-items: center;
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 3rem;
+    height: calc(100vh - 50rem);
+}
+
 @media only screen and (max-width: 985px) {
+    h1 {
+        font-size: 5.5rem;
+        margin-top: 8rem;
+    }
+
     .news-section {
         width: 100vw;
         flex-direction: column;
         align-items: center;
         margin-top: 0;
+    }
+
+    .news-list {
+        display: flex;
+        margin-top: 5rem;
+        width: 100vw;
+        flex-direction: column;
+        min-height: calc(100vh - 22.2rem);
+    }
+
+    .news-list > p {
+        display: flex;
+        align-items: center;
+        margin: 2rem auto;
+        text-align: center;
+        font-size: 2rem;
+        height: calc(100vh - 50rem);
     }
 
     .not-1 {

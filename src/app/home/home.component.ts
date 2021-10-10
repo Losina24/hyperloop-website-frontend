@@ -14,6 +14,25 @@ export class HomeComponent implements OnInit {
   pageIndex: number = 0;
   transition: boolean = false;
 
+  texts = {
+    en: {
+      queHacemos: 'What do we do?',
+      tecnologia: 'Technology',
+      hyperloopTechno: 'Hyperloop technology, also known as "the 5th mode of transport", is a vehicle based on capsules that levitate through tunnels at low pressure without friction, at high speed and autonomously.',
+      knowMore: 'You want to know more?',
+      conocenos: 'Meet us',
+      continuacion: 'Below we leave you the links to our social networks, where we continuously communicate about all the updates of our work. If you are a journalist we also leave you a link that may interest you'
+    },
+    es: {
+      queHacemos: '¿Qué hacemos?',
+      tecnologia: 'Tecnología',
+      hyperloopTechno: 'La tecnología hyperloop, o también conocida como «el quinto medio de transporte», se caracteriza por ser un vehículo basado en cápsulas que levitan dentro de túneles a baja presión sin rozamiento, a alta velocidad y de forma autónoma.',
+      knowMore: '¿Quiéres saber más?',
+      conocenos: 'Conócenos',
+      continuacion: 'A continuación te dejamos los enlaces a nuestras redes sociales, donde comunicamos continuamente sobre todas las actualizaciones de nuestro trabajo. Si eres periodista también te dejamos un link que puede interesarte'
+    }
+  }
+
   constructor(
     private _cdr: ChangeDetectorRef,
     private headerAnimator: HeaderAnimatorService
@@ -106,7 +125,7 @@ export class HomeComponent implements OnInit {
    * Scroll down event handler
    */
   scrollDown() {
-    if (this.pageIndex < 4 && this.transition == false) {
+    if (this.pageIndex < 3 && this.transition == false) {
       this.transition = true;
 
       this.pageIndex = this.pageIndex + 1;
@@ -194,4 +213,9 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  getTranslation(text: string) {
+      let lang = sessionStorage.getItem('lang');
+      //@ts-ignore
+      return this.texts[lang][text];
+  }
 }

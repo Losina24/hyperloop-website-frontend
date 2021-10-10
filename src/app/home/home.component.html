@@ -1,53 +1,51 @@
 <main mouseWheel (mouseWheelUp)="scrollUp()" (mouseWheelDown)="scrollDown()">
   <section id="s1" class="section">
     <div class="landing-container">
-      <img class="logo-ignis" src="../../assets/ignis.svg" alt="Logo ignis">
+      <!--<img class="logo-ignis" src="../../assets/ignis.svg" alt="Logo ignis">-->
+      <img class="logo-ignis" src="../../assets/Sin título-1.png" alt="Logo ignis">
       <img class="prototype" src="../../assets/prototype2.png" alt="Ignis prototype">
     </div>
     <img class="esquina-down" src="../../assets/esquinaDown.png" alt="Image 1">
     <img class="esquina-up" src="../../assets/esquinaUp.png" alt="Image 2">
-    <h2 class="nosotros">Nosotros</h2>
+    <h2 class="nosotros">Hyperloop</h2>
   </section>
 
   <section id="s2" class="section">
     <!-- Image -->
     <div class="section-separator">
-      <img src="../../assets/section1.png" alt="Section image" class="section-image">
+      <img src="../../assets/IMG_2100.JPG" alt="Section image" class="section-image">
     </div>
 
     <!-- Text -->
     <div class="section-separator section-txt">
-      <h3>Nosotros</h3>
-      <h2>Misión</h2>
-      <p>Hyperloop UPV busca poner a Valencia en el foco de la innovación, desarrollando prototipos del transporte del futuro diseñando y validando tecnología puntera y escalable aplicable a las soluciones ingenieriles a los problemas que dificultan el desarrollo sostenible de la sociedad.</p>
+      <h3>{{ getTranslation('queHacemos') }}</h3>
+      <h2>{{ getTranslation('tecnologia') }}</h2>
+      <p>{{ getTranslation('hyperloopTechno') }}</p>
     </div>
   </section>
 
   <section id="s3" class="section">
     <!-- Image -->
     <div class="section-separator">
-      <img src="../../assets/section2.png" alt="Section image" class="section-image">
+      <img src="../../assets/IMG_0303.JPG" alt="Section image" class="section-image">
     </div>
 
     <!-- Text -->
     <div class="section-separator section-txt">
-      <h3>Nosotros</h3>
-      <h2>Visión</h2>
-      <p>Buscamos el desarrollo del quinto medio de transporte. Un transporte 100% ecológico y sostenible que facilite la creciente movilidad mundial sin perjudicar al medio ambiente. Queremos hacer de nuestro trabajo en un pequeño taller, el proyecto de toda una generación.</p>
-    </div>
-  </section>
+      <h3>{{ getTranslation('knowMore') }}</h3>
+      <h2>{{ getTranslation('conocenos') }}</h2>
+      <p>{{ getTranslation('continuacion') }}</p>
 
-  <section id="s4" class="section">
-    <!-- Image -->
-    <div class="section-separator">
-      <img src="../../assets/section3.png" alt="Section image" class="section-image">
-    </div>
-
-    <!-- Text -->
-    <div class="section-separator section-txt">
-      <h3>Nosotros</h3>
-      <h2>Valores</h2>
-      <p>Hyperloop UPV busca poner a Valencia en el foco de la innovación, desarrollando prototipos del transporte del futuro diseñando y validando tecnología puntera y escalable aplicable a las soluciones ingenieriles a los problemas que dificultan el desarrollo sostenible de la sociedad.</p>
+      <div class="redes-links">
+        <a target="_blank" href="https://www.twitter.com/hyperloopupv"><i class="fab fa-twitter"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/company/hyperloopupv"><i class="fab fa-linkedin"></i></a>
+        <a target="_blank" href="https://www.facebook.com/hyperloopupv/"><i class="fab fa-facebook"></i></a>
+        <a target="_blank" href="https://www.youtube.com/channel/UCjwMDppPRYACTUP2kOoFF4w"><i class="fab fa-youtube"></i></a>
+        <a target="_blank" href="https://www.instagram.com/hyperloopupv/"><i class="fab fa-instagram-square"></i></a>
+        <a target="_blank" href="https://drive.google.com/drive/u/1/folders/132gph-X0gsbahiICnhj3jGnXiFOLn519"><i class="fas fa-newspaper"></i></a>
+      </div>
     </div>
   </section>
 </main>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />

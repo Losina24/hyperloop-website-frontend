@@ -4,10 +4,11 @@
     <a class="logo" routerLink="/" *ngIf="nightMode == true"><img src="/assets/logo-white.png" alt="Logo"></a>
 
     <div id="menu" class="link-container">
-        <a (click)="resetNightMode()" routerLink="/equipo" class="header-link" [ngClass]="{'night': nightMode}">Equipo</a>
-        <a (click)="resetNightMode()" routerLink="/noticias" class="header-link" [ngClass]="{'night': nightMode}">Noticias</a>
-        <a (click)="resetNightMode()" routerLink="/sponsors" class="header-link" [ngClass]="{'night': nightMode}">Sponsors</a>
-        <a (click)="resetNightMode()" routerLink="/contacto" class="header-link" [ngClass]="{'night': nightMode}">Contacto</a>
+        <a (click)="onRouteTravel()" routerLink="/equipo" class="header-link" [ngClass]="{'night': nightMode}">{{ getTranslation('equipo') }}</a>
+        <a (click)="onRouteTravel()" routerLink="/acerca" class="header-link" [ngClass]="{'night': nightMode}">{{ getTranslation('acerca') }}</a>
+        <a (click)="onRouteTravel()" routerLink="/noticias" class="header-link" [ngClass]="{'night': nightMode}">{{ getTranslation('noticias') }}</a>
+        <a (click)="onRouteTravel()" routerLink="/sponsors" class="header-link" [ngClass]="{'night': nightMode}">{{ getTranslation('sponsors') }}</a>
+        <a (click)="onRouteTravel()" routerLink="/contacto" class="header-link" [ngClass]="{'night': nightMode}">{{ getTranslation('contacto') }}</a>
     </div>
 
     <div [ngClass]="{'is-active': hamburgerMenu}" (click)="hamburger()" class="hamburger" id="hamburger">
@@ -18,8 +19,11 @@
 </header>
 
 <nav [ngClass]="{'d-none': hamburgerMenu == false}"  id="menu-lat">
-    <a (click)="resetNightMode()" routerLink="/equipo" class="header-link">Equipo</a>
-    ¡<a (click)="resetNightMode()" routerLink="/noticias" class="header-link">Noticias</a>
-    ¡<a (click)="resetNightMode()" routerLink="/sponsors" class="header-link">Sponsors</a>
-    ¡<a (click)="resetNightMode()" routerLink="/contacto" class="header-link">Contacto</a>
+    <a (click)="onRouteTravel()" routerLink="/equipo" class="header-link">{{ getTranslation('equipo') }}</a>
+    <a (click)="onRouteTravel()" routerLink="/acerca" class="header-link">{{ getTranslation('acerca') }}</a>
+    <a (click)="onRouteTravel()" routerLink="/noticias" class="header-link">{{ getTranslation('noticias') }}</a>
+    <a (click)="onRouteTravel()" routerLink="/sponsors" class="header-link">{{ getTranslation('sponsors') }}</a>
+    <a (click)="onRouteTravel()" routerLink="/contacto" class="header-link">{{ getTranslation('contacto') }}</a>
 </nav>
+
+<button (click)="setLang()" class="lang"><img src="/assets/{{ getLang() }}" alt=""></button>

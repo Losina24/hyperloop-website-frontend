@@ -12,6 +12,7 @@ import { NoticiaComponent } from './noticia/noticia.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { EquipoComponent } from './equipo/equipo.component';
+import { AcercaComponent } from './acerca/acerca.component';
 //import { MouseWheelDirective } from './shared/directives/mousewheel.directive';
 
 @NgModule({
@@ -22,10 +23,10 @@ import { EquipoComponent } from './equipo/equipo.component';
     NoticiasComponent,
     NewsMiniatureComponent,
     NoticiaComponent,
-    ContactoComponent,
     SponsorsComponent,
     EquipoComponent,
-    //MouseWheelDirective
+    ContactoComponent,
+    AcercaComponent
   ],
   imports: [
     BrowserModule,

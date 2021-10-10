@@ -1,6 +1,65 @@
 <!-- Desktop -->
+<article *ngIf="popup.length > 0" class="popup">
+    <div class="pop-cont">
+        <h2>{{ getTranslation('ventajas') }} {{popup}}</h2>
+        <!--<p class="aportacion">{{ventajas[popup].aportacion}}</p>-->
+
+        <ul class="lista-de-ventajas">
+            <li *ngFor="let item of ventajas[popup].ventajas">{{item}}</li>
+        </ul>
+
+        <span class="cerrar" (click)="openSponsorLevel('')">╳</span>
+    </div>
+</article>
+
 <main id="desktop" mouseWheel (mouseWheelUp)="scrollUp()" (mouseWheelDown)="scrollDown()">
+
     <section id="s1" class="section">
+        <div id="title-sponsor" class="titles">
+            <h1 id="slogan-sponsor">{{ getTranslation('necesitamos') }}</h1> 
+            <h2 id="slogan-sponsor-2">{{ getTranslation('slogan') }}</h2>
+        </div>
+
+        <div class="text-section sponsor-div-subtitle">
+            <p class="sponsor-subtitle">{{ getTranslation('subtitulo') }}</p>
+
+            <p class="cursiva">{{ getTranslation('cursiva') }}</p>
+            
+            <div class="links-container">
+                <a class="sponsor-link" href="#">Dossier partners</a>
+                <a class="sponsor-link" href="#">Dossier marketing</a>
+            </div>
+            
+            <!--<p id="scrolldown">scroll down</p>-->
+        </div>
+    </section>
+
+    <section id="s2" class="section">
+        <div class="titles">
+            <h1>{{ getTranslation('niveles') }}</h1> 
+            <h2>{{ getTranslation('pulsa') }}</h2>
+        </div>
+
+        <div class="text-section niveles">
+            <div class="nvl-div">
+                <a id="premium" class="nivel" (click)="openSponsorLevel('premium')">Premium</a>
+            </div>
+            <div class="nvl-div">
+                <a id="gold" class="nivel" (click)="openSponsorLevel('gold')">Gold</a>
+            </div>
+            <div class="nvl-div">
+                <a id="silver" class="nivel" (click)="openSponsorLevel('silver')">Silver</a>
+            </div>
+            <div class="nvl-div">
+                <a id="bronze" class="nivel" (click)="openSponsorLevel('bronze')">Bronze</a>
+            </div>
+            <div class="nvl-div">
+                <a id="collaborators" class="nivel" (click)="openSponsorLevel('collabs')">Collabs</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="s3" class="section">
         <div class="titles">
             <h2>Sponsors</h2>
             <h1>Premium</h1> 
@@ -21,7 +80,7 @@
         </div>
     </section>
   
-    <section id="s2" class="section">
+    <section id="s4" class="section">
         <div class="titles">
             <h1>Gold</h1> 
         </div>
@@ -83,7 +142,7 @@
         </div>
     </section>
   
-    <section id="s3" class="section">
+    <section id="s5" class="section">
         <div class="titles">
             <h1>Silver</h1> 
         </div>
@@ -187,7 +246,7 @@
         </div>
     </section>
 
-    <section id="s4" class="section">
+    <section id="s6" class="section">
         <div class="titles">
             <h1>Bronze</h1> 
         </div>
@@ -303,7 +362,7 @@
         </div>
     </section>
 
-    <section id="s5" class="section">
+    <section id="s7" class="section">
         <div class="titles">
             <h1>Collaborators</h1> 
         </div>
@@ -401,6 +460,51 @@
 
 <!-- Mobile -->
 <main id="mobile">
+
+    <section id="s1" class="section">
+        <div id="title-sponsor" class="titles">
+            <h1 id="slogan-sponsor">{{ getTranslation('necesitamos') }}</h1> 
+            <h2 id="slogan-sponsor-2">{{ getTranslation('slogan') }}</h2>
+        </div>
+
+        <div class="text-section sponsor-div-subtitle">
+            <p class="sponsor-subtitle">{{ getTranslation('subtitulo') }}</p>
+
+            <p class="cursiva">{{ getTranslation('cursiva') }}</p>
+            
+            <div class="links-container">
+                <a class="sponsor-link" href="#">Dossier partners</a>
+                <a class="sponsor-link" href="#">Dossier marketing</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="s2" class="section">
+        <div class="titles">
+            <h1>{{ getTranslation('niveles') }}</h1> 
+            <h2>{{ getTranslation('pulsa') }}</h2>
+        </div>
+
+        <div class="text-section niveles">
+            <div class="nvl-div">
+                <a id="premium" class="nivel" (click)="openSponsorLevel('premium')">Premium</a>
+            </div>
+            <div class="nvl-div">
+                <a id="gold" class="nivel" (click)="openSponsorLevel('gold')">Gold</a>
+            </div>
+            <div class="nvl-div">
+                <a id="silver" class="nivel" (click)="openSponsorLevel('silver')">Silver</a>
+            </div>
+            <div class="nvl-div">
+                <a id="bronze" class="nivel" (click)="openSponsorLevel('bronze')">Bronze</a>
+            </div>
+            <div class="nvl-div">
+                <a id="collaborators" class="nivel" (click)="openSponsorLevel('collabs')">Collabs</a>
+            </div>
+        </div>
+    </section>
+
     <section class="section">
         <div class="titles">
             <h2>Sponsors</h2>
