@@ -1,7 +1,7 @@
 <header>
-    <a id="logoA" class="logo" routerLink="/" *ngIf="nightMode == false"><img src="/assets/logo-black.png" alt="Logo"></a>
+    <a (click)="onRouteTravel()" id="logoA" class="logo" routerLink="/" *ngIf="nightMode == false"><img src="/assets/logo-black.png" alt="Logo"></a>
 
-    <a class="logo" routerLink="/" *ngIf="nightMode == true"><img src="/assets/logo-white.png" alt="Logo"></a>
+    <a (click)="onRouteTravel()" class="logo" routerLink="/" *ngIf="nightMode == true"><img src="/assets/logo-white.png" alt="Logo"></a>
 
     <div id="menu" class="link-container">
         <a (click)="onRouteTravel()" routerLink="/equipo" class="header-link" [ngClass]="{'night': nightMode}">{{ getTranslation('equipo') }}</a>

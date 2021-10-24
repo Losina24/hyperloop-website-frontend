@@ -154,7 +154,7 @@ export class SponsorsComponent implements OnInit {
    * Scroll down event handler
    */
   scrollDown() {
-    if (this.pageIndex < 4 && this.transition == false) {
+    if (this.pageIndex < 5 && this.transition == false) {
       this.transition = true;
 
       this.pageIndex = this.pageIndex + 1;

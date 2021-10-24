@@ -4,8 +4,17 @@ main {
     height: 100vh;
     background: rgb(255,255,255);
     background: linear-gradient(149deg, rgba(255,255,255,1) 0%, rgba(218,218,226,1) 100%);
-    overflow-x: hidden;
+    position: absolute;
 }
+
+/*::ng-deep {
+    html {
+        overflow: hidden;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        height: 100vh;
+    }
+}*/
 
 .landing-container{
     z-index: 3;
@@ -69,7 +78,8 @@ h2.nosotros {
 #s1 {
     top: 0;
     //background-color: #dadaef;
-    background-color: #020202;
+    //background-color: #020202;
+    background-color: #000;
     overflow: hidden;
 }
 

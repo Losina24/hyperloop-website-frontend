@@ -9,16 +9,33 @@ main {
     background: linear-gradient(149deg, rgba(255,255,255,1) 0%, rgba(218,218,226,1) 100%);
 }
 
+::-webkit-scrollbar {
+    display: none !important;
+}
+
+/*::ng-deep {
+    html {
+        overflow: auto !important;
+        overflow-y: auto !important;
+        overflow-x: auto !important;
+        height: auto !important;
+    }
+}*/
+
 #desktop {
     display: flex;
 }
 
-#mobile {
+#mobile, #mobile2 {
     display: none;
     position: relative;
     height: auto;
     overflow: auto;
     background-color: transparent;
+}
+
+#mobile2 {
+    display: flex;
 }
 
 .section {
@@ -29,10 +46,10 @@ main {
     height: 100vh;
     top: 100vh;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
 }
 
-#mobile > .section {
+#mobile > .section, #mobile2 > .section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,16 +60,21 @@ main {
     z-index: 1;
 }
 
-#mobile > .section > .right-equipo {
+#mobile > .section > .right-equipo, #mobile2 > .section > .right-equipo {
     height: auto;
 }
 
-#mobile > .section:first-of-type > .left-equipo {
+#mobile > .section:first-of-type > .left-equipo, #mobile2 > .section:first-of-type > .left-equipo {
     margin-top: 12rem;
 }
 
-#mobile > .section > .left-equipo {
-    margin-top: 6rem;
+#mobile > .section > .left-equipo, #mobile2 > .section > .left-equipo {
+    margin-top: 12rem;
+}
+
+.scrollable {
+    display: flex;
+    flex-direction: column;
 }
 
 .background {
@@ -63,7 +85,7 @@ main {
     height: 100vh;
     background: rgb(255,255,255);
     background: linear-gradient(149deg, rgba(255,255,255,1) 0%, rgba(218,218,226,1) 100%);
-    z-index: 0;
+    z-index: -1;
 }
 
 #s1 {
@@ -188,11 +210,15 @@ h2 {
 }
 
 @media only screen and (max-width: 985px) {
-    #desktop {
+    #desktop, #mobile2 {
         display: none;
     }
 
     #mobile {
         display: flex;
+    }
+
+    #mobile > .section > .left-equipo {
+        margin-top: 6rem;
     }
 }

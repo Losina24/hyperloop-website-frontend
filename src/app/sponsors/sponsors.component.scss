@@ -9,8 +9,21 @@ main {
     background: linear-gradient(149deg, rgba(255,255,255,1) 0%, rgba(218,218,226,1) 100%);
 }
 
+::ng-deep {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    html {
+        overflow: auto !important;
+        overflow-y: auto !important;
+        overflow-x: auto !important;
+        height: auto !important;
+    }
+}
+
 #title-sponsor {
-    height: 12rem;
+    height: 8rem;
     margin-top: 9.5rem;
     margin-bottom: 1rem;
 }
@@ -321,6 +334,7 @@ h2 {
     left: 0;
     background-color: #00000048;
     z-index: 1000;
+    overflow-y: hidden;
 }
 
 .pop-cont {
@@ -588,7 +602,7 @@ li:last-of-type {
     }
 
     #title-sponsor {
-        height: 8rem;
+        height: 2.5rem;
     }
 
     #slogan-sponsor-2 {
@@ -607,6 +621,8 @@ li:last-of-type {
     
     h2 {
         font-size: 1.4rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .titles {

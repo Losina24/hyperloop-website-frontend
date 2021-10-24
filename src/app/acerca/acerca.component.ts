@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef, HostListener } from '@angular/core';
 import { HeaderAnimatorService } from '../services/header-animator.service';
 // @ts-ignore
 import anime from 'animejs/lib/anime.es.js';
@@ -12,6 +12,10 @@ export class AcercaComponent implements OnInit {
   
   pageIndex: number = 0;
   transition: boolean = false;
+  last: number = 0;
+  aux: [number] = [0];
+  lastTouch:any = null;
+
 
   texts = {
     en: {
@@ -43,10 +47,85 @@ export class AcercaComponent implements OnInit {
   constructor(
     private _cdr: ChangeDetectorRef,
     private headerAnimator: HeaderAnimatorService
-  ) { }
+  ) {
+    // Scroll para moviles
+    /*window.addEventListener('touchstart', (event) =>{
+      this.lastTouch = null
+      this.aux = [0];
+      this.lastTouch = event.touches[0].screenY;
+
+      console.log('touch', this.lastTouch);
+    })
+
+    window.addEventListener('touchend',(event) => {
+      this.lastTouch = null;
+
+      console.log('touch', this.lastTouch);
+    })
+
+    window.addEventListener('touchmove', (event) =>{
+      var currentTouch = event.changedTouches[0].screenY
+      this.aux.push(currentTouch)
+      console.log('1234asdf', this.aux[this.aux.length - 1] > this.aux[this.aux.length - 2]);
+      
+      if (this.aux.length >= 3 && this.aux[this.aux.length - 1] > this.aux[this.aux.length - 2]) {
+        this.scrollUp()
+      } else if(this.aux.length >= 3 && this.aux[this.aux.length - 1] < this.aux[this.aux.length - 2]) {
+        this.scrollDown()
+      }
+      
+      this.lastTouch = currentTouch
+      console.log('touch', this.lastTouch);
+      
+    })*/
+  }
+
+  @HostListener('touchstart', ['$event'])
+  aaa(event: any) {
+    this.lastTouch = null;
+    this.aux = [0];
+    this.lastTouch = event.touches[0].screenY;
+
+    console.log('touch', this.lastTouch);
+  }
+
+  @HostListener('touchend', ['$event'])
+  bbb(event: any) {
+    this.lastTouch = null;
+
+    console.log('touch', this.lastTouch);
+  }
+
+  @HostListener('touchmove', ['$event'])
+  ccc(event: any) {
+    var currentTouch = event.changedTouches[0].screenY;
+      this.aux.push(currentTouch);
+      console.log(
+        '1234asdf',
+        this.aux[this.aux.length - 1] > this.aux[this.aux.length - 2]
+      );
+
+      if (
+        this.aux.length >= 3 &&
+        this.aux[this.aux.length - 1] > this.aux[this.aux.length - 2]
+      ) {
+        this.scrollUp();
+      } else if (
+        this.aux.length >= 3 &&
+        this.aux[this.aux.length - 1] < this.aux[this.aux.length - 2]
+      ) {
+        this.scrollDown();
+      }
+
+      this.lastTouch = currentTouch;
+      console.log('touch', this.lastTouch);
+  }
 
   ngOnInit(): void {
-
+    window.scroll(0,0);
+    const html = document.documentElement;
+    html.style.maxHeight = ""+window.innerHeight;
+    html.style.overflow = "hidden";
   }
 
   // SCROLL UP //

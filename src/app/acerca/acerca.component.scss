@@ -4,7 +4,17 @@ main {
     height: 100vh;
     background: rgb(255,255,255);
     background: linear-gradient(149deg, rgba(255,255,255,1) 0%, rgba(218,218,226,1) 100%);
-    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+}
+
+::ng-deep {
+    /*html {
+        overflow: hidden !important;
+        overflow-y: hidden !important;
+        overflow-x: hidden !important;
+        height: 100vh !important;
+    }*/
 }
 
 .landing-container{

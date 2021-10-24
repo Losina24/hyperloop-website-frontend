@@ -59,6 +59,7 @@ export class HeaderComponent implements OnInit {
 
   onRouteTravel() {
     window.scroll(0,0);
+    //location.reload();
     this.nightMode = false;
 
     if(this.hamburgerMenu) {

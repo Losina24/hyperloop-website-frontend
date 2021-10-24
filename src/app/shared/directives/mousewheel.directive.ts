@@ -17,6 +17,10 @@ export class MouseWheelDirective {
     }
 
     @HostListener('onmousewheel', ['$event']) onMouseWheelIE(event: any) {
+        //this.mouseWheelFunc(event);
+    }
+
+    @HostListener('window:scroll', ['$event']) on(event: any) {
         this.mouseWheelFunc(event);
     }
 

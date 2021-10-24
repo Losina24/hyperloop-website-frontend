@@ -19,6 +19,8 @@ export class EquipoComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    const html = document.documentElement;
+    html.style.overflow = "auto";
   }
 
   // SCROLL UP //

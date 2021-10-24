@@ -1,13 +1,29 @@
-<a  class="member-container">    
-    <div class="image-container" [ngClass]="big_team == true ? 'big-team' : ''">
-        <img src="../../../assets/{{member.image}}" alt="" [ngClass]="[style == 'square' ? 'square' : '',  style == 'rounded' ? 'rounded' : '', style == 'circle' ? 'circle' : '']">
+<a class="member-container" target="_blank" href="{{member.link}}">
+  <div class="image-container" [ngClass]="big_team == true ? 'big-team' : ''">
+    <img
+      src="../../../assets/{{ member.image }}"
+      alt=""
+      [ngClass]="[
+        style == 'square' ? 'square' : '',
+        style == 'rounded' ? 'rounded' : '',
+        style == 'circle' ? 'circle' : ''
+      ]"
+    />
 
-        <div [ngClass]="[style == 'square' ? 'square' : '',  style == 'rounded' ? 'rounded' : '', style == 'circle' ? 'circle' : '']" class="emoji">
-            <p>{{ member.emoji }}</p>
-        </div>
+    <div
+      [ngClass]="[
+        style == 'square' ? 'square' : '',
+        style == 'rounded' ? 'rounded' : '',
+        style == 'circle' ? 'circle' : ''
+      ]"
+      class="emoji"
+    >
+      <p>{{ member.emoji }}</p>
     </div>
+  </div>
 
+  <div class="text-div">
     <h3 [ngClass]="big_team == true ? 'bt-h3' : ''">{{ member.name }}</h3>
     <p [ngClass]="big_team == true ? 'bt-p' : ''">{{ member.position }}</p>
-
+  </div>
 </a>
