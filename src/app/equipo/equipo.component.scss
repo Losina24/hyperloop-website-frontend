@@ -5,14 +5,10 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgb(255,255,255);
-    background: linear-gradient(149deg, rgba(255,255,255,1) 0%, rgba(218,218,226,1) 100%);
+    overflow-x: hidden;
+    /* background: rgb(255,255,255);
+    background: linear-gradient(149deg, rgba(255,255,255,1) 0%, rgba(218,218,226,1) 100%); */
 }
-
-::-webkit-scrollbar {
-    display: none !important;
-}
-
 /*::ng-deep {
     html {
         overflow: auto !important;

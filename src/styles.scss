@@ -12,9 +12,11 @@
     //overflow-y: hidden;
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
+    overflow-x: hidden;
   }
 
   html>body  #main {
+    overflow-x: hidden;
     overflow-y: hidden;
   }
   
@@ -27,6 +29,7 @@
   
   body {
     margin: 0;
+    overflow-x: hidden;
   }
   
   /**
@@ -35,6 +38,7 @@
   
   main {
     display: block;
+    overflow-x: hidden;
   }
   
   /**
@@ -436,3 +440,24 @@
       }
     }
   }
+
+
+  /* width */
+::-webkit-scrollbar {
+  width: 7px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1 !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(194, 120, 51) !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(53, 91, 194) !important;
+}
