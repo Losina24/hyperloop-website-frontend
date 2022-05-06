@@ -158,13 +158,14 @@ main {
 .logo-container-0 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 15rem 10rem 15rem;
     box-sizing: border-box;
     width: 100%;
     max-width: 200rem;
     height: calc(100vh - 24rem);
     flex-wrap: wrap;
+    margin-bottom: 4rem;
 }
 
 .logo-container-2, .logo-container-3, .logo-container-4 {
@@ -204,20 +205,24 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 22rem;
     z-index: 2 !important;
+}
+
+.lcg > div {
+    width: 15%;
 }
 
 .logo-sponsor {
     width: 90%;
 }
 
+
 #valenciacf {
-    width: 75%;
+    width: 70%;
 }
 
 #upv {
-    width: 70%;
+    width: 65%;
 }
 
 #we {
@@ -226,6 +231,10 @@ main {
 
 #uniweld {
     width: 70%;
+}
+
+#coatec {
+    width: 100%;
 }
 
 #hp {
@@ -501,6 +510,13 @@ li:last-of-type {
     color: #6e7392;
 }
 
+.logo-container-3 > #dh1 {
+    width: 18%;
+}
+/* .logo-container-3 > #dh2 {
+    width: 15%;
+} */
+
 @media only screen and (max-width: 1400px) {
     .titles {
         margin-top: 10rem;
@@ -573,6 +589,16 @@ li:last-of-type {
         width: 25rem;
         height: 25rem;
     }
+    #cont-coatec {
+        width: 25rem;
+        height: 10rem;
+    }
+    /* .logo-container-3 > #dh1 {
+        width: 13%;
+    }
+    .logo-container-3 > #dh2 {
+        width: 13%;
+    } */
     .titles {
         margin-top: 6rem;
         height: 6rem;
