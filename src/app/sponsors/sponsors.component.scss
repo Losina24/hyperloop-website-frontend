@@ -197,7 +197,7 @@ main {
     align-items: center;
     justify-content: center;
     align-self: center;
-    width: 32rem;
+    width: 27rem;
     z-index: 2 !important;
 }
 
@@ -517,9 +517,28 @@ li:last-of-type {
     width: 15%;
 } */
 
+@media only screen and (max-width: 1650px) {
+    .img-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        width: 22rem;
+        z-index: 2 !important;
+    }
+}
+
 @media only screen and (max-width: 1400px) {
     .titles {
         margin-top: 10rem;
+    }
+    .img-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        width: 20rem;
+        z-index: 2 !important;
     }
 }
 
