@@ -33,14 +33,14 @@ export class AcercaComponent implements OnInit {
     es: {
       quienessomos: '¿Quiénes somos?',
       nosotros: 'Sobre nosotros',
-      team: 'El equipo Hyperloop UPV es un grupo de estudiantes que desarrolla dicha tecnología, diseñando y fabricando un vehículo prototipo de hyperloop. Este año, Hyperloop UPV propone, no sólo un vehículo escalable, sino también la infraestructura necesaria que permita su implantación en la sociedad.',
+      team: 'El equipo de Hyperloop UPV. Hyperloop UPV es un equipo de estudiantes de la Universidad Politécnica de Valencia que desarrolla, diseña y fabrica un vehículo prototipo de tecnología hyperloop. Este año, Hyperloop UPV propone, no solo un vehículo escalable, sino también la infraestructura necesaria para su implantación en la sociedad.',
       us: 'Nosotros',
       mision: 'Misión',
       vision: 'Visión',
       valores: 'Valores',
-      mMes: 'Hyperloop UPV busca poner a Valencia en el foco de la innovación, desarrollando prototipos del transporte del futuro diseñando y validando tecnología puntera y escalable aplicable a las soluciones ingenieriles a los problemas que dificultan el desarrollo sostenible de la sociedad.',
-      vMes: 'Buscamos el desarrollo del quinto medio de transporte. Un transporte 100% ecológico y sostenible que facilite la creciente movilidad mundial sin perjudicar al medio ambiente. Queremos hacer de nuestro trabajo en un pequeño taller, el proyecto de toda una generación.',
-      vvMes: 'Somos un equipo responsable con el medio ambiente y comprometido con los problemas de nuestra sociedad. Nuestro valor principal, aquel que nos mueve, es dar forma a un futuro aún mejor que nuestro presente.'
+      mMes: 'En Hyperloop UPV buscamos poner a Valencia en el foco de la innovación. Para ello, en el equipo de la UPV desarrollamos vehículos prototipos de tecnología puntera y escalable, aplicable a las soluciones ingenieriles y a los problemas que dificultan el desarrollo sostenible de la sociedad.',
+      vMes: 'Buscamos el desarrollo del quinto medio de transporte. Un transporte ultrarrápido y sostenible que facilite la movilidad mundial. Queremos hacer de nuestro trabajo en un pequeño taller, el proyecto de toda una generación.',
+      vvMes: 'Somos un equipo comprometido con el medio ambiente y con los problemas de movilidad de nuestra sociedad. Nuestro valor principal es dar forma a un futuro en el que las ciudades estén mejor conectadas.'
     }
   }
 

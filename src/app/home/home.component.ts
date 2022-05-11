@@ -35,10 +35,10 @@ export class HomeComponent implements OnInit {
     },
     es: {
       queHacemos: '¿Qué hacemos?',
-      tecnologia: 'Tecnología',
+      tecnologia: 'Tecnología hyperloop',
       hyperloopTechno:
-        'La tecnología hyperloop, o también conocida como «el quinto medio de transporte», se caracteriza por ser un vehículo basado en cápsulas que levitan dentro de túneles a baja presión sin rozamiento, a alta velocidad y de forma autónoma.',
-      knowMore: '¿Quiéres saber más?',
+        'La tecnología hyperloop es una tecnología para lo que será «el quinto medio de transporte». Se caracteriza por un vehículo que se desplaza dentro de un tubo a baja presión sin ningún tipo de rozamiento, por lo que con tan solo un impulso inicial puede alcanzar altas velocidades.',
+      knowMore: '¿Quieres saber más?',
       conocenos: 'Conócenos',
       continuacion:
         'A continuación te dejamos los enlaces a nuestras redes sociales, donde comunicamos continuamente sobre todas las actualizaciones de nuestro trabajo. Si eres periodista también te dejamos un link que puede interesarte',
