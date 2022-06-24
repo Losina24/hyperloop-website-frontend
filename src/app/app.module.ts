@@ -15,6 +15,7 @@ import { EquipoComponent } from './equipo/equipo.component';
 import { AcercaComponent } from './acerca/acerca.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EntrarComponent } from './entrar/entrar.component';
+import { UnveilingComponent } from './unveiling/unveiling.component';
 //import { MouseWheelDirective } from './shared/directives/mousewheel.directive';
 
 @NgModule({
@@ -30,7 +31,8 @@ import { EntrarComponent } from './entrar/entrar.component';
     ContactoComponent,
     AcercaComponent,
     DashboardComponent,
-    EntrarComponent
+    EntrarComponent,
+    UnveilingComponent
   ],
   imports: [
     BrowserModule,

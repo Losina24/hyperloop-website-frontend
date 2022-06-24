@@ -1,0 +1,58 @@
+.unveiling-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: calc(100vh - 5rem);
+    padding-top: 5rem;
+}
+
+h1, h2 {
+    font-size: 5rem;
+    font-weight: 100;
+    margin: 0;
+}
+
+.slogan {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    color: rgb(222, 101, 26);
+    background: -webkit-linear-gradient(70deg, rgb(59, 90, 231), rgb(234, 90, 65));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.img-unv {
+    width: 65rem;
+    /* height: 35rem; */
+    border-radius: .8rem;
+    cursor: pointer;
+}
+
+.a2 {
+    margin-top: 4rem;
+}
+
+.btn {
+    margin-top: 2rem;
+    background-color: #f4f4f4;
+    padding: 1.3rem 3rem;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    color: rgb(134, 134, 139);
+    transition: all .25s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #ececec;
+}
+
+@media only screen and (max-width: 800px) {
+    .unveiling-section > h1 {
+        font-size: 3rem;
+        width: 100%;
+        text-align: center;
+    }    
+}
