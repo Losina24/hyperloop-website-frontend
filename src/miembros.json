@@ -618,5 +618,45 @@
         "image": "../noimg.png",
         "link": "https://www.linkedin.com/in/",
         "emoji": "😎"
+    },
+    {
+        "id": 68,
+        "alias": "STF",
+        "name": "Stefan Costea",
+        "subsystem": "Sense & Control",
+        "position": "Firmware",
+        "image": "HL individual-151.jpg",
+        "link": "https://www.linkedin.com/in/stefan-costea-5a3648205/",
+        "emoji": "🤔"
+    },
+    {
+        "id": 69,
+        "alias": "PG1",
+        "name": "Pablo González",
+        "subsystem": "Sense & Control",
+        "position": "Software",
+        "image": "HL individual-143.jpg",
+        "link": "https://www.linkedin.com/in/",
+        "emoji": "😎"
+    },
+    {
+        "id": 70,
+        "alias": "PG2",
+        "name": "Pablo Gonzálbez",
+        "subsystem": "Sense & Control",
+        "position": "Software",
+        "image": "Fotos-506.jpg",
+        "link": "https://www.linkedin.com/in/",
+        "emoji": "😎"
+    },
+    {
+        "id": 71,
+        "alias": "SEM",
+        "name": "Sergio Moreno",
+        "subsystem": "Sense & Control",
+        "position": "Software",
+        "image": "HL individual-073.jpg",
+        "link": "https://www.linkedin.com/in/",
+        "emoji": "😎"
     }
 ]
