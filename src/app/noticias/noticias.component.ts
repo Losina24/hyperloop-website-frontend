@@ -2,7 +2,8 @@ import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 // @ts-ignore
 import anime from 'animejs/lib/anime.es.js';
 import { HeaderAnimatorService } from '../services/header-animator.service';
-
+import { News } from '../shared/types/News';
+import * as NewsJson from 'src/noticias.json';
 @Component({
   selector: 'app-noticias',
   templateUrl: './noticias.component.html',
@@ -10,6 +11,8 @@ import { HeaderAnimatorService } from '../services/header-animator.service';
 })
 export class NoticiasComponent implements OnInit {
   
+  //public news:News[]= NewsJson;
+
   pageIndex: number = 0;
   transition: boolean = false;
 

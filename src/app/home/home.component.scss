@@ -22,6 +22,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    //animation-name: background-animation;
+    //animation-duration: 1s;
 }
 
 .redes-links {
@@ -45,9 +47,9 @@ main {
 }
 
 .prototype {
-    margin-top: -1rem;
-    margin-bottom: -3rem;
-    width: 75rem;
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+    width: 100rem;
 }
 
 .section {
@@ -105,13 +107,18 @@ h1 {
     font-weight: 100;
 }
 
-.logo-ignis {
+.logo-auran {
+    position: absolute;
     width: 72rem;
-    //margin-top: -6rem;
-    z-index: 2;
-    margin-top: 6rem;
-    margin-bottom: -12rem;
-    margin-right: -1.2rem;
+    margin-top: 30rem;
+    z-index: -1;
+    margin-bottom: 55rem;
+    margin-right: -3rem;
+    //transform: translateY(0rem);
+    //transition: opacity 1s
+    //    transform 1s;
+    //animation-name: logo-auran-animation;
+    //animation-duration: 1s;
 }
 
 .esquina-down {
@@ -146,11 +153,15 @@ h1 {
     font-weight: 500;
     margin-bottom: 1.6rem;
 
-    background: rgb(170,78,47);
+    background: rgb(193,88,27);
     background: linear-gradient(149deg, rgba(170,78,47,1) 0%, rgba(71,72,117,1) 100%);
-    -webkit-background-clip: text;
+    //background: linear-gradient(150deg, rgba(238,118,35,1) 0%, rgba(193,88,27,1),  rgb(2, 59, 76) 70% );
+    //background: linear-gradient(to right, rgba(0,59,77,1),rgba(122,151,171,1));
+    //background: linear-gradient(180deg, rgba(193,88,27,1),rgba(238,118,35,1));
     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
+
 
 .section-txt > h3 {
     font-size: 2rem;
@@ -181,10 +192,10 @@ h1 {
 }
 
 @media only screen and (max-width: 1130px) {
-    .logo-ignis {
+    .logo-auran {
         width: 50rem;
         z-index: 2;
-        margin-bottom: -15rem;
+        margin-bottom: 45rem;
 
     }
 
@@ -233,8 +244,8 @@ h1 {
 }
 
 @media only screen and (max-width: 950px) {
-    .logo-ignis {
-        margin-bottom: -17rem;
+    .logo-auran {
+        margin-bottom: 38rem;
     }
 
     .prototype {
@@ -263,6 +274,7 @@ h1 {
 
     .section-txt {
         padding: 6rem 3.5rem;
+        align-items:center;
     }
 
     .section-txt > h2 {
@@ -298,8 +310,8 @@ h1 {
         width: 90%;
     }
 
-    .logo-ignis {
-        margin-bottom: -17rem;
+    .logo-auran {
+        margin-bottom: 38rem;
     }
 
     .prototype {
@@ -336,10 +348,13 @@ h1 {
     .section-txt > h2 {
         font-size: 10rem;
         margin-bottom: 1.8rem;
+        align-items: center;
     }
     
     .section-txt > h3 {
         font-size: 3rem;
+        visibility: hidden;
+        padding-top: 3rem;
         margin-bottom: 1.5rem;
         margin-top: 0rem;
     }
@@ -350,12 +365,6 @@ h1 {
         line-height: 3.7rem;
         padding-right: 0;
         text-align: center;
-    }
-}
-
-@media only screen and (max-width: 850px) and (orientation: portrait) {
-    .section, #s2, #s3, #s4, #s5 {
-        flex-direction: column-reverse;
     }
 
     #s2 .section-separator, #s3 .section-separator, #s4 .section-separator, #s5 .section-separator {
@@ -405,9 +414,71 @@ h1 {
     }
 }
 
+@media only screen and (max-width: 850px) and (orientation: portrait) {
+    .section, #s2, #s3, #s4, #s5 {
+        flex-direction: column-reverse;
+    }
+
+    .logo-auran {
+        margin-bottom: 35rem;
+        width: 45rem;
+    }
+
+
+    #s2 .section-separator, #s3 .section-separator, #s4 .section-separator, #s5 .section-separator {
+        margin-left: 0;
+        padding: 1.5rem 3.5rem;
+        text-align: center;
+    }
+
+    .section-separator {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    h2.nosotros {
+        display: none;
+    }
+
+    .section-image {
+        width: 100%;
+        height: 100%;
+        max-width: 45rem;
+        max-height: 35rem;
+        margin-top: 2rem;
+    }
+
+    .section-txt {
+        padding: 1.5rem 3.5rem;
+        align-items: center;
+    }
+
+    .section-txt > h2 {
+        display: inline;
+        font-size: 6.8rem;
+        margin-bottom: 1.5rem;
+        align-items: center;
+    }
+    
+    .section-txt > h3 {
+        font-size: 2.1rem;
+        margin-bottom: 0;
+        margin-top: 1rem;
+        align-items: center;
+    }
+    
+    .section-txt > p {
+        font-size: 1.9rem;
+        margin: 0;
+        line-height: 3.1rem;
+        padding-right: 0;
+        text-align: center;
+    }
+}
+
 @media only screen and (max-width: 650px) {
-    .logo-ignis {
-        margin-bottom: -14rem;
+    .logo-auran {
+        margin-bottom: 35rem;
         width: 34rem;
     }
 
@@ -444,14 +515,17 @@ h1 {
     }
 
     .section-txt > h2 {
+        display: inline;
         font-size: 5.5rem;
         margin-bottom: 1.2rem;
+        text-align: center;
     }
     
     .section-txt > h3 {
         font-size: 1.8rem;
         margin-bottom: 0;
         margin-top: 3rem;
+        text-align: center;
     }
     
     .section-txt > p {
@@ -460,6 +534,7 @@ h1 {
         line-height: 3.1rem;
         padding: 1rem 2rem;
         text-align: center;
+        align-items: center;
     }
 
     .redes-links {
@@ -477,8 +552,8 @@ h1 {
 }
 
 @media only screen and (max-width: 550px) {
-    .logo-ignis {
-        margin-bottom: -9rem;
+    .logo-auran {
+        margin-bottom: 35rem;
         width: 26rem;
     }
 
@@ -543,5 +618,25 @@ h1 {
         line-height: 2rem;
         padding: 1rem 2rem;
         text-align: center;
+    }
+
+    @keyframes background-animation {
+        from{
+            background-position:0% 0% ;
+        }
+        to{
+            background-position: 100% 0%;
+        }
+    }
+
+    @keyframes logo-auran-animation {
+        from{
+            opacity: 0;
+            transform: translateY(5rem);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0rem);
+        }
     }
 }

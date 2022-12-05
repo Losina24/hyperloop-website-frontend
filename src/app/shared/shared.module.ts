@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { MouseWheelDirective } from './directives/mousewheel.directive';
 import { MiembroComponent } from './miembro/miembro.component';
+import { NewsMiniatureComponent } from './news-miniature/news-miniature.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,7 @@ import { MiembroComponent } from './miembro/miembro.component';
   ],
   declarations: [
     MouseWheelDirective,
-    MiembroComponent
+    MiembroComponent,
   ],
   exports: [
     CommonModule,
@@ -25,7 +26,7 @@ import { MiembroComponent } from './miembro/miembro.component';
     HttpClientModule,
     RouterModule,
     MouseWheelDirective,
-    MiembroComponent
+    MiembroComponent,
   ]
 })
 export class SharedModule {}

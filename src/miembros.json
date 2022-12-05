@@ -2,9 +2,9 @@
     {
         "id": 1,
         "alias": "MCM",
-        "name": "María Cuesta Martín",
-        "subsystem": "Direction",
-        "position": "Team Lead",
+        "name": "María Cuesta",
+        "subsystem": "Collaborators",
+        "position": "Collaborator",
         "image": "HL individual-080.jpg",
         "link": "https://www.linkedin.com/in/mar%C3%ADa-cuesta-mart%C3%ADn/",
         "emoji": "👥"
@@ -13,7 +13,7 @@
         "id": 2,
         "alias": "FAV",
         "name": "Ferran de Andrés Vert",
-        "subsystem": "Levitation & Traction",
+        "subsystem": "Electromagnetics",
         "position": "Vehicle dynamics",
         "image": "HL individual-302.jpg",
         "link": "https://www.linkedin.com/in/ferrandeandres/",
@@ -42,37 +42,37 @@
     {
         "id": 5,
         "alias": "JPC",
-        "name": "Javier Presmanes Cardama",
-        "subsystem": "Sense & Control",
-        "position": "S&C Lead",
+        "name": "Javier Presmanes",
+        "subsystem": "Collaborators",
+        "position": "S&C",
         "image": "HL individual-121.jpg",
         "link": "https://www.linkedin.com/in/javierpresmanescardama/",
         "emoji": "😎"
     },
     {
         "id": 7,
-        "alias": "AGG",
-        "name": "Amparo García González",
+        "alias": "AGO",
+        "name": "Alix Giner",
         "subsystem": "Outreach",
         "position": "Outreach Lead",
-        "image": "HL individual-200.jpg",
-        "link": "https://www.linkedin.com/in/amparogargon/",
-        "emoji": "🐢"
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in",
+        "emoji": "😎"
     },
     {
         "id": 8,
-        "alias": "APC",
-        "name": "Ariadna Presmanes Cardama",
+        "alias": "LH",
+        "name": "Leo Hurtado",
         "subsystem": "Outreach",
-        "position": "CM & Content Creator",
-        "image": "Ariadna_Presmanes.png",
-        "link": "https://www.linkedin.com/in/amparogargon/",
-        "emoji": "😎"
+        "position": "Media & Graphic",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/",
+        "emoji": "🪐"
     },
     {
         "id": 9,
         "alias": "JMI",
-        "name": "Josep Balbino Martínez",
+        "name": "Josep Balbino",
         "subsystem": "Direction",
         "position": "Technical Director",
         "image": "josep.png",
@@ -102,9 +102,9 @@
     {
         "id": 12,
         "alias": "JLG",
-        "name": "Javier Luján González",
-        "subsystem": "Direction",
-        "position": "Technical Director",
+        "name": "Javier Luján",
+        "subsystem": "Collaborators",
+        "position": "Electromagnetics",
         "image": "HL individual-385.jpg",
         "link": "https://www.linkedin.com/in/javierlujangonz/",
         "emoji": "😎"
@@ -122,9 +122,9 @@
     {
         "id": 14,
         "alias": "JLS",
-        "name": "Jose Luis Lores Sánchez",
-        "subsystem": "Structures & Mechanisms",
-        "position": "Mechanical Lead",
+        "name": "Jose Luis Lores",
+        "subsystem": "Collaborators",
+        "position": "Structures & Mechanisms",
         "image": "HL individual-366.jpg",
         "link": "https://www.linkedin.com/in/joseluislores/",
         "emoji": "😎"
@@ -144,49 +144,49 @@
         "alias": "ENA",
         "name": "Enrique Navarro Atienza",
         "subsystem": "Partners",
-        "position": "Lead",
+        "position": "Parters Lead",
         "image": "HL individual-179.jpg",
         "link": "https://www.linkedin.com/in/enriquenavarroatienza/",
         "emoji": "😎"
     },
     {
         "id": 17,
-        "alias": "CMS",
-        "name": "Clara Montalva Sanjuan",
+        "alias": "MSO",
+        "name": "Marta Simó",
         "subsystem": "Outreach",
-        "position": "Marketing strategist",
-        "image": "Clara_Montalva.png",
-        "link": "https://www.linkedin.com/in/clara-montalva-sanjuan-1073b4140/",
+        "position": "Media & Graphic",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in//",
         "emoji": "😎"
     },
     {
         "id": 18,
         "alias": "DGC",
-        "name": "Daniel González Castiñeiras",
+        "name": "Daniel González",
         "subsystem": "Sense & Control",
-        "position": "Software",
+        "position": "Technical Director",
         "image": "Fotos-625.jpg",
         "link": "https://www.linkedin.com/in/daniel-gonzalez-casti%C3%B1eiras-24786b1b8/",
-        "emoji": "🎸"
+        "emoji": "🐒"
     },
     {
         "id": 19,
-        "alias": "DTF",
-        "name": "Daniel Tomás Fito",
+        "alias": "MMO",
+        "name": "Maria Moya",
         "subsystem": "Outreach",
-        "position": "Full Scale",
-        "image": "noimg.png",
-        "link": "http://www.linkedin.com/in/daniel-tom%C3%A1s-fito",
+        "position": "Interior Design",
+        "image": "../noimg.png",
+        "link": "http://www.linkedin.com/in/",
         "emoji": "😎"
     },
     {
         "id": 20,
-        "alias": "SMM",
-        "name": "Sandra Moya Moya",
+        "alias": "ISO",
+        "name": "Irene Sabio",
         "subsystem": "Outreach",
         "position": "Marketing",
-        "image": "HL individual-390.jpg",
-        "link": "http://www.linkedin.com/in/sandra-moya-moya-415853204",
+        "image": "../noimg.png",
+        "link": "http://www.linkedin.com/in/",
         "emoji": "😎"
     },
     {
@@ -202,9 +202,9 @@
     {
         "id": 22,
         "alias": "HAB",
-        "name": "Hugo Albert Bonet",
+        "name": "Hugo Albert",
         "subsystem": "Partners",
-        "position": "Partners Agent",
+        "position": "Partners Lead",
         "image": "HL individual-266.jpg",
         "link": "https://www.linkedin.com/in/hugoalbert/",
         "emoji": "😎"
@@ -222,8 +222,8 @@
     {
         "id": 24,
         "alias": "ALG",
-        "name": "Alejandro Losa García",
-        "subsystem": "Sense & Control",
+        "name": "Alejandro Losa",
+        "subsystem": "Collaborators",
         "position": "Software",
         "image": "HL individual-312.jpg",
         "link": "https://www.linkedin.com/in/alejandrolosagarc%C3%ADa/",
@@ -252,29 +252,29 @@
     {
         "id": 27,
         "alias": "DRA",
-        "name": "David Ramón Alamán",
+        "name": "David Ramón",
         "subsystem": "Sense & Control",
-        "position": "Firmware",
+        "position": "Hardware",
         "image": "HL individual-094.jpg",
         "link": "https://www.linkedin.com/in/davidramonalaman/",
-        "emoji": "😎"
+        "emoji": "⚡"
     },
     {
         "id": 29,
         "alias": "ARA",
-        "name": "Álvaro Rey Antón",
+        "name": "Álvaro Rey",
         "subsystem": "Sense & Control",
-        "position": "Hardware",
+        "position": "Hardware Lead",
         "image": "HL individual-306.jpg",
         "link": "http://linkedin.com/in/reyantonalvaro",
-        "emoji": "😎"
+        "emoji": "🔌"
     },
     {
         "id": 30,
         "alias": "PGP",
         "name": "Paula García Pérez",
         "subsystem": "Structures & Mechanisms",
-        "position": "Electrical management",
+        "position": "Brakes",
         "image": "HL individual-063.jpg",
         "link": "https://www.linkedin.com/in/paula-garc%C3%ADa-p%C3%A9rez-532486208",
         "emoji": "😎"
@@ -343,11 +343,11 @@
         "id": 39,
         "alias": "RG",
         "name": "Ricardo González",
-        "subsystem": "Structures & Mechanisms",
-        "position": "Lead",
+        "subsystem": "Direction",
+        "position": "Team Lead",
         "image": "HL individual-332.jpg",
         "link": "https://www.linkedin.com/in/rgbd",
-        "emoji": "😎"
+        "emoji": "☯"
     },
     {
         "id": 40,
@@ -362,9 +362,9 @@
     {
         "id": 41,
         "alias": "JAJ",
-        "name": "Jose Ángel Jarabo",
+        "name": "Jose Ángel",
         "subsystem": "Structures & Mechanisms",
-        "position": "Testing engineer",
+        "position": "Infrastructure",
         "image": "HL individual-050.jpg",
         "link": "https://www.linkedin.com/in/",
         "emoji": "😎"
@@ -374,17 +374,17 @@
         "alias": "MF",
         "name": "Mario Ferrer",
         "subsystem": "Structures & Mechanisms",
-        "position": "Thermal management",
+        "position": "Attitudes",
         "image": "HL individual-139.jpg",
-        "link": "https://www.linkedin.com/in/",
-        "emoji": "😎"
+        "link": "https://www.linkedin.com/in/mario-ferrer-mart%C3%ADn-b34a651b8/",
+        "emoji": "🤙"
     },
     {
         "id": 43,
         "alias": "EM",
         "name": "Eduardo Maté",
-        "subsystem": "Levitation & Traction",
-        "position": "Lead",
+        "subsystem": "Collaborators",
+        "position": "Control & Dynamics",
         "image": "HL individual-133.jpg",
         "link": "https://www.linkedin.com/in/",
         "emoji": "😎"
@@ -393,7 +393,7 @@
         "id": 44,
         "alias": "CR",
         "name": "Carlos Raya",
-        "subsystem": "Levitation & Traction",
+        "subsystem": "Electromagnetics",
         "position": "Levitation",
         "image": "HL individual-187.jpg",
         "link": "https://www.linkedin.com/in/",
@@ -403,8 +403,8 @@
         "id": 45,
         "alias": "RM",
         "name": "Raquel Murcia",
-        "subsystem": "Levitation & Traction",
-        "position": "Traction",
+        "subsystem": "Electromagnetics",
+        "position": "Electromagnetics Lead",
         "image": "HL individual-342.jpg",
         "link": "https://www.linkedin.com/in/",
         "emoji": "😎"
@@ -413,7 +413,7 @@
         "id": 46,
         "alias": "RM2",
         "name": "Rafael Monllor",
-        "subsystem": "Levitation & Traction",
+        "subsystem": "Electromagnetics",
         "position": "Traction",
         "image": "HL individual-321.jpg",
         "link": "https://www.linkedin.com/in/",
@@ -423,16 +423,16 @@
         "id": 47,
         "alias": "LZ",
         "name": "Lucía Zorroza",
-        "subsystem": "Partners",
-        "position": "Partners",
+        "subsystem": "Economics",
+        "position": "Operations Director",
         "image": "HL individual-380.jpg",
-        "link": "https://www.linkedin.com/in/",
-        "emoji": "😎"
+        "link": "https://www.linkedin.com/in/lucíazorroza",
+        "emoji": "🎯"
     },
     {
         "id": 48,
         "alias": "MG",
-        "name": "María García",
+        "name": "María García Gayet",
         "subsystem": "Partners",
         "position": "Partners",
         "image": "HL individual-088.jpg",
@@ -446,7 +446,7 @@
         "subsystem": "Partners",
         "position": "Partners",
         "image": "HL individual-238.jpg",
-        "link": "https://www.linkedin.com/in/",
+        "link": "https://www.linkedin.com/in/sergio-egea-soto/",
         "emoji": "😎"
     },
     {
@@ -523,8 +523,8 @@
         "id": 58,
         "alias": "FZ",
         "name": "Felipe Zaballa",
-        "subsystem": "Collaborators",
-        "position": "Collaborator",
+        "subsystem": "Sense & Control",
+        "position": "Frontend",
         "image": "../noimg.png",
         "link": "https://www.linkedin.com/in/",
         "emoji": "😎"
@@ -572,7 +572,7 @@
     {
         "id": 63,
         "alias": "JMR",
-        "name": "José Manuel Ros",
+        "name": "José Manuel",
         "subsystem": "Collaborators",
         "position": "Collaborator",
         "image": "../noimg.png",
@@ -624,20 +624,20 @@
         "alias": "STF",
         "name": "Stefan Costea",
         "subsystem": "Sense & Control",
-        "position": "Firmware",
+        "position": "Firmware Lead",
         "image": "HL individual-151.jpg",
         "link": "https://www.linkedin.com/in/stefan-costea-5a3648205/",
         "emoji": "🤔"
     },
     {
         "id": 69,
-        "alias": "PG1",
+        "alias": "PGS",
         "name": "Pablo González",
         "subsystem": "Sense & Control",
-        "position": "Software",
+        "position": "Firmware",
         "image": "HL individual-143.jpg",
-        "link": "https://www.linkedin.com/in/",
-        "emoji": "😎"
+        "link": "https://www.linkedin.com/in/pablo-gonz%C3%A1lez-segarra-a49442239//",
+        "emoji": "🗿"
     },
     {
         "id": 70,
@@ -654,9 +654,290 @@
         "alias": "SEM",
         "name": "Sergio Moreno",
         "subsystem": "Sense & Control",
-        "position": "Software",
+        "position": "Software Lead",
         "image": "HL individual-073.jpg",
+        "link": "https://www.linkedin.com/in/",
+        "emoji": "🏹"
+    },
+    {
+        "id": 72,
+        "alias": "RMM",
+        "name": "Rubén Marz",
+        "subsystem": "Sense & Control",
+        "position": "Hardware",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/",
+        "emoji": "😎"
+    },
+    {
+        "id": 73,
+        "alias": "ES",
+        "name": "Estela Sánchez",
+        "subsystem": "Sense & Control",
+        "position": "Hardware",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/estela-inmaculada-s%C3%A1nchez-manjavacas-romero-397876250/",
+        "emoji": "🤓"
+    },
+    {
+        "id": 74,
+        "alias": "JD",
+        "name": "Jose David",
+        "subsystem": "Sense & Control",
+        "position": "Hardware",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/",
+        "emoji": "😎"
+    },
+    {
+        "id": 75,
+        "alias": "DM",
+        "name": "Daniel Montesinos",
+        "subsystem": "Sense & Control",
+        "position": "Hardware",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/",
+        "emoji": "😎"
+    },
+    {
+        "id": 75,
+        "alias": "AA",
+        "name": "Adria Álvarez",
+        "subsystem": "Collaborators",
+        "position": "Hardware",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/",
+        "emoji": "😎"
+    },
+    {
+        "id": 76,
+        "alias": "MP",
+        "name": "Marco Perez",
+        "subsystem": "Collaborators",
+        "position": "Hardware",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/",
+        "emoji": "😎"
+    },
+    {
+        "id": 77,
+        "alias": "JMA",
+        "name": "Juan MartÍnez",
+        "subsystem": "Sense & Control",
+        "position": "Backend",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/",
+        "emoji": "🧞"
+    },
+    {
+        "id": 77,
+        "alias": "EG",
+        "name": "Estefanía Guillén",
+        "subsystem": "Partners",
+        "position": "Partners",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/estefan%C3%ADa-guill%C3%A9n-orozco",
+        "emoji": "⭐"
+    },
+    {
+        "id": 78,
+        "alias": "AGH",
+        "name": "Alejandro Gonzalvo",
+        "subsystem": "Sense & Control",
+        "position": "Firmware",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/",
+        "emoji": "👴"
+    },
+    {
+        "id": 79,
+        "alias": "DB",
+        "name": "David Balsalobre",
+        "subsystem": "Structures & Mechanisms",
+        "position": "Chassis",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/",
+        "emoji": "😎"
+    },
+    {
+        "id": 80,
+        "alias": "DGS",
+        "name": "David González",
+        "subsystem": "Structures & Mechanisms",
+        "position": "Motor",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/",
+        "emoji": "😎"
+    },
+    {
+        "id": 81,
+        "alias": "EI",
+        "name": "Elian Iglesias",
+        "subsystem": "Structures & Mechanisms",
+        "position": "Attitudes",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/",
+        "emoji": "😎"
+    },
+    {
+        "id": 82,
+        "alias": "TS",
+        "name": "Theo Sommerer",
+        "subsystem": "Structures & Mechanisms",
+        "position": "Electrical integration",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/",
+        "emoji": "😎"
+    },
+    {
+        "id": 83,
+        "alias": "PL",
+        "name": "Pablo Luján",
+        "subsystem": "Structures & Mechanisms",
+        "position": "Attitudes",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/pabloluj%C3%A1nsabater",
+        "emoji": "🤖"
+    },
+    {
+        "id": 84,
+        "alias": "LR",
+        "name": "Luis Rubio",
+        "subsystem": "Structures & Mechanisms",
+        "position": "Aeroshell",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/",
+        "emoji": "😎"
+    },
+    {
+        "id": 85,
+        "alias": "PB",
+        "name": "Paco Baixauli",
+        "subsystem": "Electromagnetics",
+        "position": "Electromagnetic desing",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/francisco-baixauli-barbero-284989211",
+        "emoji": "👌"
+    },
+    {
+        "id": 86,
+        "alias": "MA",
+        "name": "Mariano Andujar",
+        "subsystem": "Electromagnetics",
+        "position": "Electromagnetic desing",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/",
+        "emoji": "😎"
+    },
+    {
+        "id": 87,
+        "alias": "AP",
+        "name": "Álvaro Pérez",
+        "subsystem": "Electromagnetics",
+        "position": "Control & Dynamics",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/alvaro-perez-pecharroman",
+        "emoji": "🛫"
+    },
+    {
+        "id": 88,
+        "alias": "GA",
+        "name": "Gema Acea",
+        "subsystem": "Electromagnetics",
+        "position": "Control & Dynamics",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/",
+        "emoji": "😎"
+    },
+    {
+        "id": 89,
+        "alias": "MS",
+        "name": "Miquel Sitges",
+        "subsystem": "Electromagnetics",
+        "position": "Control & Dynamics",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/",
+        "emoji": "😎"
+    },
+    {
+        "id": 90,
+        "alias": "GR",
+        "name": "Guillermo Regidor",
+        "subsystem": "Collaborators",
+        "position": "Electromagnetics",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/",
+        "emoji": "😎"
+    },
+    {
+        "id": 91,
+        "alias": "MAP",
+        "name": "Mar Adsuara",
+        "subsystem": "Partners",
+        "position": "Parters",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/maradsuarafayos",
+        "emoji": "🌊"
+    },
+    {
+        "id": 92,
+        "alias": "ET",
+        "name": "Esteban Tortosa",
+        "subsystem": "Partners",
+        "position": "Parters",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in",
+        "emoji": "😎"
+    },
+    {
+        "id": 93,
+        "alias": "MRP",
+        "name": "Marina Romero",
+        "subsystem": "Partners",
+        "position": "Parters",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/marina-romero-del-hombrebueno",
+        "emoji": "💫"
+    },
+    {
+        "id": 94,
+        "alias": "BE",
+        "name": "Beatriz Espinar",
+        "subsystem": "Partners",
+        "position": "Parters",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/beatriz-de-silva-espinar-hern%C3%A1ndez-043952236",
+        "emoji": "🍿"
+    },
+    {
+        "id": 95,
+        "alias": "CS",
+        "name": "Claudia Silvestre",
+        "subsystem": "Economics",
+        "position": "Economics",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in",
+        "emoji": "😎"
+    },
+    {
+        "id": 96,
+        "alias": "RC",
+        "name": "Ricardo Chust",
+        "subsystem": "Sense & Control",
+        "position": "Firmware",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in",
+        "emoji": "😎"
+    },
+    {
+        "id": 97,
+        "alias": "ALO",
+        "name": "Alba López",
+        "subsystem": "Collaborators",
+        "position": "Outreach",
+        "image": "../noimg.png",
         "link": "https://www.linkedin.com/in/",
         "emoji": "😎"
     }
+
 ]

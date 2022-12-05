@@ -105,7 +105,15 @@ h1 {
     z-index: 1;
 }
 
+.crop { 
+    width: 48rem;
+    height: 44rem;
+    overflow:auto;
+    object-fit: cover;
+}
+
 .section-image {
+    //transform: scale(1.5);
     width: 48rem;
     height: 44rem;
     object-fit: cover;

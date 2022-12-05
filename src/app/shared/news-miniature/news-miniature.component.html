@@ -1,7 +1,9 @@
-<a routerLink="/noticias/1" class="news-mini">
-    <img src="../../../assets/section1.png" alt="" class="mini-img">
+
+<!--routerLink="/noticias/1" href="{{noticia.url}}" target="_blank"-->
+<a class="news-mini" href="{{noticia.url}}" target="_blank">
+    <img src="../../../assets/noticias/{{noticia.image}}" alt="" class="mini-img">
     <div class="news-back">
-        <p class="titulo">Título</p>
-        <p class="fecha">1 sept 2021</p>
+        <p class="titulo">{{noticia.shorttitle}}</p>
+        <p class="fecha">{{noticia.shortdate}}</p>
     </div>
 </a>

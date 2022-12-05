@@ -1,0 +1,31 @@
+[
+    {   
+        "id" : 1,
+        "date" : "28 de Diciembre de 2022",
+        "shortdate": "28/12/22",
+        "title" : "El prototipo que levita de la UPV, el más premiado en la European Hyperloop Week",
+        "shorttitle":"El prototipo más premiado de la EHW",
+        "image": "1.jpg",
+        "url" : "https://www.20minutos.es/noticia/5034751/0/el-prototipo-que-levita-de-la-upv-el-mas-premiado-en-la-european-hyperloop-week/"
+
+    },
+
+    {   
+        "id" : 2,
+        "shortdate": "26/07/2022",
+        "shorttitle":"El proyecto de Hyperloop UPV",
+        "image": "2.jpg",
+        "url" : "https://cadenaser.com/comunitat-valenciana/2022/07/26/el-proyecto-de-hyperloop-valenciano-consigue-cuatro-premios-en-un-certamen-europeo-radio-valencia/"
+
+    },
+
+    {   
+        "id" : 3,
+        "shortdate": "18/07/2022",
+        "shorttitle":"Hyperloop UPV compite en la EHW",
+        "image": "3.jpg",
+        "url" : "https://valenciaplaza.com/hyperloop-upv-compite-paises-bajos-auran-primero-capaz-levitar-eficazmente"
+
+    }
+
+]

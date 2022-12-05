@@ -145,31 +145,51 @@ main {
 
 .logo-container {
     display: flex;
+    gap:3rem;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10rem 10rem 10rem;
+    padding: 0 10rem 15rem 10rem;
     box-sizing: border-box;
     width: 100%;
     max-width: 200rem;
     height: calc(100vh - 24rem);
     flex-wrap: wrap;
+   
 }
 
 .logo-container-0 {
     display: flex;
+    gap: 3rem;
     align-items: center;
     justify-content: center;
-    padding: 0 15rem 10rem 15rem;
+    padding: 0 10rem 15rem 10rem;
     box-sizing: border-box;
     width: 100%;
     max-width: 200rem;
     height: calc(100vh - 24rem);
     flex-wrap: wrap;
-    margin-bottom: 4rem;
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+    
 }
 
-.logo-container-2, .logo-container-3, .logo-container-4 {
+.logo-container-2, .logo-container-4 {
     justify-content: center;
+    display: flex;
+    gap: 3rem;
+    margin-top: 10rem;
+}
+//silvers
+.logo-container-3{
+    justify-content: center;
+    display: flex;
+    gap: 3rem;  
+}
+
+.logo-container-4{
+    justify-content: center;
+    display: flex;
+    gap: 3rem;  
 }
 
 .logo-container > div {
@@ -203,6 +223,7 @@ main {
 
 .img-container-gold {
     display: flex;
+    gap: 3rem;
     align-items: center;
     justify-content: center;
     z-index: 2 !important;
@@ -214,31 +235,117 @@ main {
 
 .logo-sponsor {
     width: 90%;
+    scale: 2.3;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
+.logo-sponsor > #onirix, #sick, #peak, #gurit{
+    scale:3;
+    width: 90%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#die {
+    scale: 2
+}
+
+#ziur {
+    width: 80%;
+    scale: 2
+}
 
 #valenciacf {
-    width: 70%;
+    width: 100%;
+    scale: 2
 }
 
 #upv {
-    width: 65%;
+    width: 100%;
+    scale: 2
+}
+
+#laser {
+    width: 100%;
+    scale: 1.5
 }
 
 #we {
     width: 70%;
+    scale:2
 }
 
 #uniweld {
-    width: 70%;
+    width: 100%;
+    scale: 2
 }
 
 #coatec {
-    width: 100%;
+    width: 80%;
+    scale: 2
+}
+
+#altium {
+    scale:2
+}
+
+#ansys {
+    scale:2
+}
+
+#arroz {
+    scale:2
+}
+
+#genespont {
+    scale:2
+}
+
+#segura {
+    scale:2
+}
+
+#iberia {
+    scale:2
+}
+
+#laser {
+    scale:2
+}
+
+#mundinmar {
+    scale:2
+}
+
+#noksel {
+    scale:2
+}
+
+#tsa {
+    scale:2
+}
+
+#we {
+    scale:2
+}
+
+#zeleros {
+    scale:2
 }
 
 #hp {
-    width: 70%;
+    width: 100%;
+    scale:3
+}
+
+#logos-silver {
+    display: flex;
+    gap: 4rem;
 }
 
 .titles {
@@ -247,8 +354,13 @@ main {
 }
 
 #s2 > .titles, #s3 > .titles, #s4 > .titles {
-    margin-top: 13rem;
+    margin-top: 7rem;
 }
+
+#s6 >.titles{
+    margin-top: 10rem ;
+}
+
 
 h1 {
     font-size: 7rem;

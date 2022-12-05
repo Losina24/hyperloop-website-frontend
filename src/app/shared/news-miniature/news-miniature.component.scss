@@ -1,8 +1,8 @@
 img {
     background-color: #202020;
     object-fit: cover;
-    width: 38rem;
-    height: 26rem;
+    width: 42rem;
+    height: 31rem;
     position: relative;
     z-index: 2;
     filter: grayscale(.9) contrast(75%) brightness(90%) saturate(70%);
@@ -16,12 +16,12 @@ img {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    width: 38rem;
-    height: 26rem;
+    width: 42rem;
+    height: 31rem;
     position: absolute;
     background: rgb(170,78,47);
     background: linear-gradient(149deg, rgba(170,78,47,1) 0%, rgba(71,72,117,1) 100%);
-    margin-left: -1.6rem;
+    margin-left: -2rem;
     margin-top: 3rem;
     z-index: 1;
     transition: all .4s cubic-bezier(0.215, 0.610, 0.355, 1);

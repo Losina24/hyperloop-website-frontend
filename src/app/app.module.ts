@@ -24,7 +24,6 @@ import { UnveilingComponent } from './unveiling/unveiling.component';
     FooterComponent,
     HeaderComponent,
     NoticiasComponent,
-    NewsMiniatureComponent,
     NoticiaComponent,
     SponsorsComponent,
     EquipoComponent,
@@ -32,12 +31,13 @@ import { UnveilingComponent } from './unveiling/unveiling.component';
     AcercaComponent,
     DashboardComponent,
     EntrarComponent,
-    UnveilingComponent
+    UnveilingComponent,
+    NewsMiniatureComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [
   ],
