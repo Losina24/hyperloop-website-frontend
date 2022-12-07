@@ -4,7 +4,7 @@
         "alias": "MCM",
         "name": "María Cuesta",
         "subsystem": "Collaborators",
-        "position": "Collaborator",
+        "position": "Partners",
         "image": "HL individual-080.jpg",
         "link": "https://www.linkedin.com/in/mar%C3%ADa-cuesta-mart%C3%ADn/",
         "emoji": "👥"
@@ -44,7 +44,7 @@
         "alias": "JPC",
         "name": "Javier Presmanes",
         "subsystem": "Collaborators",
-        "position": "S&C",
+        "position": "Firmware",
         "image": "HL individual-121.jpg",
         "link": "https://www.linkedin.com/in/javierpresmanescardama/",
         "emoji": "😎"
@@ -144,7 +144,7 @@
         "alias": "ENA",
         "name": "Enrique Navarro Atienza",
         "subsystem": "Partners",
-        "position": "Parters Lead",
+        "position": "Partners Lead",
         "image": "HL individual-179.jpg",
         "link": "https://www.linkedin.com/in/enriquenavarroatienza/",
         "emoji": "😎"
@@ -423,8 +423,8 @@
         "id": 47,
         "alias": "LZ",
         "name": "Lucía Zorroza",
-        "subsystem": "Economics",
-        "position": "Operations Director",
+        "subsystem": "Direction",
+        "position": "Technical Director",
         "image": "HL individual-380.jpg",
         "link": "https://www.linkedin.com/in/lucíazorroza",
         "emoji": "🎯"
@@ -814,7 +814,7 @@
         "alias": "PB",
         "name": "Paco Baixauli",
         "subsystem": "Electromagnetics",
-        "position": "Electromagnetic desing",
+        "position": "Electromagnetic Desing",
         "image": "../noimg.png",
         "link": "https://www.linkedin.com/in/francisco-baixauli-barbero-284989211",
         "emoji": "👌"
@@ -824,7 +824,7 @@
         "alias": "MA",
         "name": "Mariano Andujar",
         "subsystem": "Electromagnetics",
-        "position": "Electromagnetic desing",
+        "position": "Electromagnetic Desing",
         "image": "../noimg.png",
         "link": "https://www.linkedin.com/in/",
         "emoji": "😎"
@@ -874,7 +874,7 @@
         "alias": "MAP",
         "name": "Mar Adsuara",
         "subsystem": "Partners",
-        "position": "Parters",
+        "position": "Partners",
         "image": "../noimg.png",
         "link": "https://www.linkedin.com/in/maradsuarafayos",
         "emoji": "🌊"
@@ -884,7 +884,7 @@
         "alias": "ET",
         "name": "Esteban Tortosa",
         "subsystem": "Partners",
-        "position": "Parters",
+        "position": "Partners",
         "image": "../noimg.png",
         "link": "https://www.linkedin.com/in",
         "emoji": "😎"
@@ -894,7 +894,7 @@
         "alias": "MRP",
         "name": "Marina Romero",
         "subsystem": "Partners",
-        "position": "Parters",
+        "position": "Partners",
         "image": "../noimg.png",
         "link": "https://www.linkedin.com/in/marina-romero-del-hombrebueno",
         "emoji": "💫"
@@ -904,7 +904,7 @@
         "alias": "BE",
         "name": "Beatriz Espinar",
         "subsystem": "Partners",
-        "position": "Parters",
+        "position": "Partners",
         "image": "../noimg.png",
         "link": "https://www.linkedin.com/in/beatriz-de-silva-espinar-hern%C3%A1ndez-043952236",
         "emoji": "🍿"
@@ -938,6 +938,16 @@
         "image": "../noimg.png",
         "link": "https://www.linkedin.com/in/",
         "emoji": "😎"
+    },  
+    {
+        "id": 91,
+        "alias": "MAE",
+        "name": "Mar Adsuara",
+        "subsystem": "Economics",
+        "position": "Economics",
+        "image": "../noimg.png",
+        "link": "https://www.linkedin.com/in/maradsuarafayos",
+        "emoji": "🌊"
     }
 
 ]
