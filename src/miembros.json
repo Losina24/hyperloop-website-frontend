@@ -272,7 +272,7 @@
     {
         "id": 30,
         "alias": "PGP",
-        "name": "Paula García Pérez",
+        "name": "Paula García",
         "subsystem": "Structures & Mechanisms",
         "position": "Brakes",
         "image": "HL individual-063.jpg",
@@ -784,7 +784,7 @@
         "alias": "TS",
         "name": "Theo Sommerer",
         "subsystem": "Structures & Mechanisms",
-        "position": "Electrical integration",
+        "position": "Electrical Integration",
         "image": "../noimg.png",
         "link": "https://www.linkedin.com/in/",
         "emoji": "😎"
@@ -824,7 +824,7 @@
         "alias": "MA",
         "name": "Mariano Andujar",
         "subsystem": "Electromagnetics",
-        "position": "Electromagnetic Desing",
+        "position": "Electromagnetic Design",
         "image": "../noimg.png",
         "link": "https://www.linkedin.com/in/",
         "emoji": "😎"
@@ -874,7 +874,7 @@
         "alias": "MAP",
         "name": "Mar Adsuara",
         "subsystem": "Partners",
-        "position": "Partners",
+        "position": "Partners & Economics",
         "image": "../noimg.png",
         "link": "https://www.linkedin.com/in/maradsuarafayos",
         "emoji": "🌊"
@@ -944,7 +944,7 @@
         "alias": "MAE",
         "name": "Mar Adsuara",
         "subsystem": "Economics",
-        "position": "Economics",
+        "position": "Partners & Economics",
         "image": "../noimg.png",
         "link": "https://www.linkedin.com/in/maradsuarafayos",
         "emoji": "🌊"

@@ -335,8 +335,9 @@ main {
 }
 
 #zeleros {
-    scale:2
+    scale:1.5
 }
+
 
 #hp {
     width: 100%;
@@ -642,6 +643,10 @@ li:last-of-type {
         width: 22rem;
         z-index: 2 !important;
     }
+
+    #zelerosMobile {
+        scale:2
+    }
 }
 
 @media only screen and (max-width: 1400px) {
@@ -656,6 +661,7 @@ li:last-of-type {
         width: 20rem;
         z-index: 2 !important;
     }
+
 }
 
 @media only screen and (max-width: 1200px) {
