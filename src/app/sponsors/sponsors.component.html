@@ -2,12 +2,9 @@
 <article *ngIf="popup.length > 0" class="popup">
     <div class="pop-cont">
         <h2>{{ getTranslation('ventajas') }} {{popup}}</h2>
-        <!--<p class="aportacion">{{ventajas[popup].aportacion}}</p>-->
-
         <ul class="lista-de-ventajas">
             <li *ngFor="let item of ventajas[popup].ventajas">{{item}}</li>
         </ul>
-
         <span class="cerrar" (click)="openSponsorLevel('')">╳</span>
     </div>
 </article>
@@ -17,47 +14,16 @@
     <section id="s1" class="section">
         <div id="title-sponsor" class="titles">
             <h1 id="slogan-sponsor">{{ getTranslation('necesitamos') }}</h1> 
-            <!-- <h2 id="slogan-sponsor-2">{{ getTranslation('slogan') }}</h2> -->
         </div>
 
         <div class="text-section sponsor-div-subtitle">
             <p class="sponsor-subtitle">{{ getTranslation('subtitulo') }}</p>
-
             <p class="cursiva">{{ getTranslation('cursiva') }}</p>
-            
             <div class="links-container">
-                <!-- <a class="sponsor-link" href="#">Dossier partners</a> -->
                 <a class="sponsor-link" target="_blank" href="https://drive.google.com/file/d/1P998cJCgWDl2qZTJ9B6-nBC3JYSjlQRG/view?usp=share_link">Dossier partners</a>
             </div>
-            
-            <!--<p id="scrolldown">scroll down</p>-->
         </div>
     </section>
-
-    <!--<section id="s2" class="section">
-        <div class="titles">
-            <h1>{{ getTranslation('niveles') }}</h1> 
-            <h2>{{ getTranslation('pulsa') }}</h2>
-        </div>
-
-        <div class="text-section niveles">
-            <div class="nvl-div">
-                <a id="premium" class="nivel" (click)="openSponsorLevel('premium')">Premium</a>
-            </div>
-            <div class="nvl-div">
-                <a id="gold" class="nivel" (click)="openSponsorLevel('gold')">Gold</a>
-            </div>
-            <div class="nvl-div">
-                <a id="silver" class="nivel" (click)="openSponsorLevel('silver')">Silver</a>
-            </div>
-            <div class="nvl-div">
-                <a id="bronze" class="nivel" (click)="openSponsorLevel('bronze')">Bronze</a>
-            </div>
-            <div class="nvl-div">
-                <a id="collaborators" class="nivel" (click)="openSponsorLevel('collabs')">Collabs</a>
-            </div>
-        </div>
-    </section>-->
 
     <section id="s2" class="section">
         <div class="titles">
@@ -66,23 +32,8 @@
         </div>
 
         <div class="logo-container-0">
-
-            <div>
-                <a target="_blank" href="https://zeleros.com/" class="img-container-gold">
-                    <img src="assets/GOLD/zeleros.svg" id="zeleros" class="logo-sponsor">
-                </a>
-            </div>
-
-            <a target="_blank" href="https://upv.es" class="img-container">
-                <img src="assets/PREMIUM/upv.svg" id="upv" class="logo-sponsor">
-            </a>
-
-            <a target="_blank" href="http://www.coatec.net/" class="img-container">
-                <img src="assets/PREMIUM/coatec.svg" id="coatec" class="logo-sponsor">
-            </a>
-
-            <a target="_blank" href="http://www.uni-weld.com/" class="img-container">
-                <img src="assets/PREMIUM/uniweld.svg" id="uniweld" class="logo-sponsor">
+            <a *ngFor="let sponsor of PREMIUM_SPONSOR;" target="_blank" [href]="sponsor.href" class="img-container">
+                <img [src]="sponsor.image" [id]="sponsor.name" class="logo-sponsor">
             </a>
         </div>
     </section>
@@ -92,82 +43,10 @@
             <h1>Gold</h1> 
         </div>
 
-        <div id="logos_gold" class="logo-container lcg logo-container-2">            
-            <div>
-                <a target="_blank" href="https://www.laservalencia.com/" class="img-container-gold">
-                    <img src="assets/GOLD/laservlc.svg" id="laser" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.mudinmar.com/es/" class="img-container-gold">
-                    <img src="assets/GOLD/mundinmar.svg" id="mundinmar" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.we-online.com/web/en/wuerth_elektronik/start.php" class="img-container-gold">
-                    <img src="assets/GOLD/we.svg" id="we" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://altium.com" class="img-container-gold">
-                    <img src="assets/GOLD/altium.svg" id="altium" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://ansys.com" class="img-container-gold">
-                    <img src="assets/GOLD/ansys.svg" id="ansys" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.hp.com/es-es/home.html" class="img-container-gold">
-                    <img src="assets/GOLD/hp.svg" id="hp" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.tsa.at/" class="img-container-gold">
-                    <img src="assets/GOLD/tsa.svg" id="tsa" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://arrozdacsa.com/" class="img-container-gold">
-                    <img src="assets/GOLD/arrozdacsa.svg" id="arroz" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://generacionespontanea.upv.es/" class="img-container-gold">
-                    <img src="assets/GOLD/generacionespontanea.svg" id="genespont" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://nokselspain.com/" class="img-container-gold">
-                    <img src="assets/GOLD/noksel.svg" id="noksel" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.iberia.com/es/" class="img-container-gold">
-                    <img src="assets/GOLD/iberia.svg" id="iberia" class="logo-sponsor">
-                </a>
-            </div>
-
-            <!--div>
-                <a target="_blank" href="https://www.wurth.es/" class="img-container-gold">
-                    <img src="../../assets/gold/Logo Wurth.svg" id="wurth" class="logo-sponsor">
-                </a>
-            </!--div-->
-
-            <div>
-                <a target="_blank" href="https://www.fsegura.com/" class="img-container-gold">
-                    <img src="assets/GOLD/gruposegura.svg" id="segura" class="logo-sponsor">
+        <div id="logos_gold" class="logo-container lcg logo-container-3">            
+            <div *ngFor="let sponsor of GOLDEN_SPONSOR;">
+                <a target="_blank" [href]="sponsor.href" class="img-cosicainer-gold">
+                    <img [src]="sponsor.image" [id]="sponsor.name" class="logo-sponsor">
                 </a>
             </div>
         </div>
@@ -178,158 +57,12 @@
             <h1>Silver</h1> 
         </div>
 
-        <div id="logos_silver" class="logo-container logo-container-3">
-            <div>
-                <a target="_blank" href="https://www.acerinox.com/es/index.html" class="img-container-gold">
-                    <img src="assets/SILVER/acerinox.svg" id="acerinox" class="logo-sponsor">
+        <div id="logos_silver" class="logo-container logo-container-4">
+            <div *ngFor="let sponsor of SILVER_SPONSOR;">
+                <a target="_blank" [href]="sponsor.href" class="img-cosicainer-silver">
+                    <img [src]="sponsor.image" [id]="sponsor.name" class="logo-sponsor">
                 </a>
             </div>
-
-            <div>
-                <a target="_blank" href="http://www.demetal.es/" class="img-container-gold">
-                    <img src="assets/SILVER/demetal.svg" id="demetal" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.eurocircuits.com/" class="img-container-gold">
-                    <img src="assets/SILVER/eurocircuits.svg" id="eurocircuits" class="logo-sponsor">
-                </a>
-            </div>
-            
-            <div>
-                <a target="_blank" href="https://www.mbha.com" class="img-container-gold">
-                    <img src="assets/SILVER/mbha.svg" id="mbha" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.gurit.com/" class="img-container-gold">
-                    <img src="assets/SILVER/gurit.svg" id="gurit" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="http://www.metalcheck-cnc.com/" class="img-container-gold">
-                    <img src="assets/SILVER/metalcheck.svg" id="metalcheck" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.nefab.com/es/home/" class="img-container-gold">
-                    <img src="assets/SILVER/nefab.svg" id="nefab" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" id="jag" href="https://www.joseantoniogarcia.com/site/" class="img-container-gold">
-                    <img src="assets/SILVER/joseantonio.svg" id="joseantonio" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.leybold.com" class="img-container-gold">
-                    <img src="assets/SILVER/leybold.svg" id="leybold" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.mecanizadosgarrigues.es/" class="img-container-gold">
-                    <img src="assets/SILVER/mecanizadosgarrigues.svg" id="mecanizadosgarrigues" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://es.rs-online.com/web/" class="img-container-gold">
-                    <img src="assets/SILVER/rs.svg" id="rs" class="logo-sponsor">
-                </a>
-            </div>
-            
-            <div>
-                <a target="_blank" href="https://www.sick.com/es/es/" class="img-container-gold">
-                    <img src="assets/SILVER/sick.svg" id="sick" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.smc.eu/en-eu" class="img-container-gold">
-                    <img src="assets/SILVER/smc.svg" id="smc" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.3ds.com/es/" class="img-container-gold">
-                    <img src="assets/SILVER/dassault.svg" id="dassault" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://epidor.com/" class="img-container-gold">
-                    <img src="assets/SILVER/epidor.svg" id="epidor" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://jucosystems.com/" class="img-container-gold">
-                    <img src="assets/SILVER/juco.svg" id="juco" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="http://werkstat.es/" class="img-container-gold">
-                    <img src="assets/SILVER/werkstat.svg" id="werkstat" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div id="dh1">
-                <a target="_blank" href="https://dreamhack.es/" class="img-container-gold">
-                    <img src="assets/SILVER/dreamhack.svg" id="dreamhack" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://elektroautomatik.com/es/" class="img-container-gold">
-                    <img src="assets/SILVER/elektro.svg" id="elektro" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.jbctools.com/" class="img-container-gold">
-                    <img src="assets/SILVER/jbc.svg" id="jbc" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div id="dh2">
-                <a target="_blank" href="https://www.silentflex.com/" class="img-container-gold">
-                    <img src="assets/SILVER/silentflex.svg" id="silentflex" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.mahle.com/" class="img-container-gold">
-                    <img src="assets/SILVER/mahle.svg" id="mahle" class="logo-sponsor">
-                </a>
-            </div>
-            
-            <div>
-                <a target="_blank" href="https://www.tecnicasreunidas.es/es/" class="img-container-gold">
-                    <img src="assets/SILVER/tecnicasreunidas.svg" id="tecnicasreunidas" class="logo-sponsor">
-                </a>
-            </div>
-      
-            <div>
-                <a target="_blank" href="https://www.tecnocaucho.com/" class="img-container-gold">
-                    <img src="assets/SILVER/tecnocaucho.svg" id="tecnocaucho" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.redbull.com/es-es/" class="img-container-gold">
-                    <img src="assets/Colaboradores/redbull.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-
         </div>
     </section>
 
@@ -338,111 +71,12 @@
             <h1>Bronze</h1> 
         </div>
 
-        <div class="logo-container logo-container-4">
-
-            <a target="_blank" href="https://www.valenciacf.com/es" class="img-container">
-                <img src="assets/PREMIUM/valencia.svg" id="valencia" class="logo-sponsor">
-            </a>
-
-            <div>
-                <a target="_blank" href="http://www.aussafer.it/en" class="img-container-gold">
-                    <img src="assets/BRONZE/aussafer.svg" class="logo-sponsor">
+        <div id="logos_bronze" class="logo-container logo-container-5">
+            <div *ngFor="let sponsor of BRONZE_SPONSOR;">
+                <a target="_blank" [href]="sponsor.href" class="img-cosicainer-bronze">
+                    <img [src]="sponsor.image" [id]="sponsor.name" class="logo-sponsor">
                 </a>
             </div>
-
-            <!--div>
-                <a target="_blank" href="https://www.perma-tec.com/es/" class="img-container-gold">
-                    <img src="assets/BRONZE/aussafer.svg" class="logo-sponsor">
-                </a>
-            </-div-->
-
-            <!--div>
-                <a target="_blank" href="" class="img-container-gold">
-                    <img src="../../assets/bronze/TARÍ.svg" class="logo-sponsor">
-                </a>
-            </!--div-->
-
-            <div>
-                <a target="_blank" href="http://www.etsid.upv.es/alumnos/" class="img-container-gold">
-                    <img src="assets/BRONZE/etsid.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.bender.es/" class="img-container-gold">
-                    <img src="assets/BRONZE/bender.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.3m.com.es/3M/es_ES/empresa-es/" class="img-container-gold">
-                    <img src="assets/BRONZE/3m.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-
-            <div>
-                <a target="_blank" href="https://www.infineon.com/" class="img-container-gold">
-                    <img src="assets/BRONZE/infineon.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.maxlinear.com/" class="img-container-gold">
-                    <img src="assets/BRONZE/maxlinear.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.etsie.upv.es/" class="img-container-gold">
-                    <img src="assets/BRONZE/etsie.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://distron.es/" class="img-container-gold">
-                    <img src="assets/BRONZE/distron.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-
-            <div>
-                <a target="_blank" href="https://crisanlaboral.es/" class="img-container-gold">
-                    <img src="assets/BRONZE/crisan.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="http://www.industa.com/" class="img-container-gold">
-                    <img src="assets/BRONZE/industa.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.fabory.com/es/" class="img-container-gold">
-                    <img src="assets/BRONZE/fabory.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.manpowergroup.es/" class="img-container-gold">
-                    <img src="assets/BRONZE/manpower.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://perma.es/mecanizado/" class="img-container-gold">
-                    <img src="assets/BRONZE/mecanizadosperma.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.supermagnete.es/" class="img-container-gold">
-                    <img src="assets/Colaboradores/supermagnete.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-    
         </div>
     </section>
 
@@ -451,47 +85,21 @@
             <h1>Collaborators</h1> 
         </div>
 
-        <div class="logo-container logo-container-4">
-
-            <div>
-                <a target="_blank" href="https://www.cmt.upv.es/#/" class="img-container-gold">
-                    <img src="assets/Colaboradores/motorestermicos.svg" class="logo-sponsor">
+        <div id="logos_collaborators" class="logo-container logo-container-4">
+            <div *ngFor="let sponsor of COLLABORATORS;">
+                <a target="_blank" [href]="sponsor.href" class="img-cosicainer-collaborators">
+                    <img [src]="sponsor.image" [id]="sponsor.name" class="logo-sponsor">
                 </a>
             </div>
-
-
-            <div>
-                <a target="_blank" href="http://www.etsit.upv.es/" class="img-container-gold">
-                    <img src="assets/Colaboradores/teleco.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://norelem.es/es/" class="img-container-gold">
-                    <img src="assets/Colaboradores/dm.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="" class="img-container-gold">
-                    <img src="assets/Colaboradores/norelem.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://royme.com/" class="img-container-gold">
-                    <img src="assets/Colaboradores/royme.svg" class="logo-sponsor">
-                </a>
-            </div>
-
         </div>
+
     </section>
 
     <span class="back-text">Sponsors</span>
 </main>
-  
 
 <!-- Mobile -->
+
 <main id="mobile">
 
     <section class="section">
@@ -520,22 +128,8 @@
         </div>
 
         <div class="logo-container">
-
-    
-            <a target="_blank" href="https://zeleros.com/" class="img-container">
-                    <img src="assets/GOLD/zeleros.svg" id="zelerosMobile" class="logo-sponsor">
-            </a>
-
-            <a target="_blank" href="https://upv.es" class="img-container">
-                <img src="assets/PREMIUM/upv.svg" id="upv" class="logo-sponsor">
-            </a>
-
-            <a target="_blank" href="http://www.coatec.net/" class="img-container">
-                <img src="assets/PREMIUM/coatec.svg" id="coatec" class="logo-sponsor">
-            </a>
-
-            <a target="_blank" href="http://www.uni-weld.com/" class="img-container">
-                <img src="assets/PREMIUM/uniweld.svg" id="uniweld" class="logo-sponsor">
+            <a *ngFor="let sponsor of PREMIUM_SPONSOR;" target="_blank" [href]="sponsor.href" class="img-container">
+                <img [src]="sponsor.image" [id]="sponsor.name" class="logo-sponsor">
             </a>
         </div>
     </section>
@@ -546,84 +140,12 @@
         </div>
 
         <div class="logo-container lcg logo-container-2">
-            <div>
-                <a target="_blank" href="https://www.laservalencia.com/" class="img-container-gold">
-                    <img src="assets/GOLD/laservlc.svg" id="laser" class="logo-sponsor">
+            <div *ngFor="let sponsor of GOLDEN_SPONSOR;">
+                <a target="_blank" [href]="sponsor.href" class="img-cosicainer-gold">
+                    <img [src]="sponsor.image" [id]="sponsor.name" class="logo-sponsor">
                 </a>
             </div>
-
-            <div>
-                <a target="_blank" href="https://www.mudinmar.com/es/" class="img-container-gold">
-                    <img src="assets/GOLD/mundinmar.svg" id="mundinmar" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.we-online.com/web/en/wuerth_elektronik/start.php" class="img-container-gold">
-                    <img src="assets/GOLD/we.svg" id="we" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://altium.com" class="img-container-gold">
-                    <img src="assets/GOLD/altium.svg" id="altium" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://ansys.com" class="img-container-gold">
-                    <img src="assets/GOLD/ansys.svg" id="ansys" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.hp.com/es-es/home.html" class="img-container-gold">
-                    <img src="assets/GOLD/hp.svg" id="hp" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.tsa.at/" class="img-container-gold">
-                    <img src="assets/GOLD/tsa.svg" id="tsa" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://arrozdacsa.com/" class="img-container-gold">
-                    <img src="assets/GOLD/arrozdacsa.svg" id="arroz" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://generacionespontanea.upv.es/" class="img-container-gold">
-                    <img src="assets/GOLD/generacionespontanea.svg" id="genespont" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://nokselspain.com/" class="img-container-gold">
-                    <img src="assets/GOLD/noksel.svg" id="noksel" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.iberia.com/es/" class="img-container-gold">
-                    <img src="assets/GOLD/iberia.svg" id="iberia" class="logo-sponsor">
-                </a>
-            </div>
-
-            <!--div>
-                <a target="_blank" href="https://www.wurth.es/" class="img-container-gold">
-                    <img src="../../assets/gold/Logo Wurth.svg" id="wurth" class="logo-sponsor">
-                </a>
-            </!--div-->
-
-            <div>
-                <a target="_blank" href="https://www.fsegura.com/" class="img-container-gold">
-                    <img src="assets/GOLD/gruposegura.svg" id="segura" class="logo-sponsor">
-                </a>
-            </div>
-            </div>
+        </div>
     </section>
   
     <section class="section">
@@ -632,156 +154,11 @@
         </div>
 
         <div class="logo-container lcg logo-container-2">
-            <div>
-                <a target="_blank" href="https://www.acerinox.com/es/index.html" class="img-container-gold">
-                    <img src="assets/SILVER/acerinox.svg" id="acerinox" class="logo-sponsor">
+            <div *ngFor="let sponsor of SILVER_SPONSOR;">
+                <a target="_blank" [href]="sponsor.href" class="img-cosicainer-silver">
+                    <img [src]="sponsor.image" [id]="sponsor.name" class="logo-sponsor">
                 </a>
             </div>
-
-            <div>
-                <a target="_blank" href="http://www.demetal.es/" class="img-container-gold">
-                    <img src="assets/SILVER/demetal.svg" id="demetal" class="logo-sponsor">
-                </a>
-            </div>
-            
-            <div>
-                <a target="_blank" href="https://www.mbha.com" class="img-container-gold">
-                    <img src="assets/SILVER/mbha.svg" id="mbha" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.gurit.com/" class="img-container-gold">
-                    <img src="assets/SILVER/gurit.svg" id="gurit" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="http://www.metalcheck-cnc.com/" class="img-container-gold">
-                    <img src="assets/SILVER/metalcheck.svg" id="metalcheck" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.nefab.com/es/home/" class="img-container-gold">
-                    <img src="assets/SILVER/nefab.svg" id="nefab" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" id="jag" href="https://www.joseantoniogarcia.com/site/" class="img-container-gold">
-                    <img src="assets/SILVER/joseantonio.svg" id="joseantonio" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.leybold.com" class="img-container-gold">
-                    <img src="assets/SILVER/leybold.svg" id="leybold" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.mecanizadosgarrigues.es/" class="img-container-gold">
-                    <img src="assets/SILVER/mecanizadosgarrigues.svg" id="mecanizadosgarrigues" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://es.rs-online.com/web/" class="img-container-gold">
-                    <img src="assets/SILVER/rs.svg" id="rs" class="logo-sponsor">
-                </a>
-            </div>
-            
-            <div>
-                <a target="_blank" href="https://www.sick.com/es/es/" class="img-container-gold">
-                    <img src="assets/SILVER/sick.svg" id="sick" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.smc.eu/en-eu" class="img-container-gold">
-                    <img src="assets/SILVER/smc.svg" id="smc" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.3ds.com/es/" class="img-container-gold">
-                    <img src="assets/SILVER/dassault.svg" id="dassault" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://epidor.com/" class="img-container-gold">
-                    <img src="assets/SILVER/epidor.svg" id="epidor" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://jucosystems.com/" class="img-container-gold">
-                    <img src="assets/SILVER/juco.svg" id="juco" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="http://werkstat.es/" class="img-container-gold">
-                    <img src="assets/SILVER/werkstat.svg" id="werkstat" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div id="dh1">
-                <a target="_blank" href="https://dreamhack.es/" class="img-container-gold">
-                    <img src="assets/SILVER/dreamhack.svg" id="dreamhack" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://elektroautomatik.com/es/" class="img-container-gold">
-                    <img src="assets/SILVER/elektro.svg" id="elektro" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.jbctools.com/" class="img-container-gold">
-                    <img src="assets/SILVER/jbc.svg" id="jbc" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div id="dh2">
-                <a target="_blank" href="https://www.silentflex.com/" class="img-container-gold">
-                    <img src="assets/SILVER/silentflex.svg" id="silentflex" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.mahle.com/" class="img-container-gold">
-                    <img src="assets/SILVER/mahle.svg" id="mahle" class="logo-sponsor">
-                </a>
-            </div>
-            
-            <div>
-                <a target="_blank" href="https://www.tecnicasreunidas.es/es/" class="img-container-gold">
-                    <img src="assets/SILVER/tecnicasreunidas.svg" id="tecnicasreunidas" class="logo-sponsor">
-                </a>
-            </div>
-      
-            <div>
-                <a target="_blank" href="https://www.tecnocaucho.com/" class="img-container-gold">
-                    <img src="assets/SILVER/tecnocaucho.svg" id="tecnocaucho" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.eurocircuits.com/" class="img-container-gold">
-                    <img src="assets/SILVER/eurocircuits.svg" id="eurocircuits" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.redbull.com/es-es/" class="img-container-gold">
-                    <img src="assets/Colaboradores/redbull.svg" class="logo-sponsor">
-                </a>
-            </div>
-
         </div>
     </section>
 
@@ -791,102 +168,11 @@
         </div>
 
         <div class="logo-container lcg logo-container-2">
-            <div>
-                <a target="_blank" href="http://www.aussafer.it/en" class="img-container-gold">
-                    <img src="assets/BRONZE/aussafer.svg" class="logo-sponsor">
+            <div *ngFor="let sponsor of BRONZE_SPONSOR;">
+                <a target="_blank" [href]="sponsor.href" class="img-cosicainer-bronze">
+                    <img [src]="sponsor.image" [id]="sponsor.name" class="logo-sponsor">
                 </a>
             </div>
-
-            <!--div>
-                <a target="_blank" href="https://www.perma-tec.com/es/" class="img-container-gold">
-                    <img src="assets/BRONZE/aussafer.svg" class="logo-sponsor">
-                </a>
-            </-div-->
-
-            <!--div>
-                <a target="_blank" href="" class="img-container-gold">
-                    <img src="../../assets/bronze/TARÍ.svg" class="logo-sponsor">
-                </a>
-            </!--div-->
-
-            <div>
-                <a target="_blank" href="http://www.etsid.upv.es/alumnos/" class="img-container-gold">
-                    <img src="assets/BRONZE/etsid.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.bender.es/" class="img-container-gold">
-                    <img src="assets/BRONZE/bender.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.3m.com.es/3M/es_ES/empresa-es/" class="img-container-gold">
-                    <img src="assets/BRONZE/3m.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.infineon.com/" class="img-container-gold">
-                    <img src="assets/BRONZE/infineon.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.maxlinear.com/" class="img-container-gold">
-                    <img src="assets/BRONZE/maxlinear.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.etsie.upv.es/" class="img-container-gold">
-                    <img src="assets/BRONZE/etsie.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://distron.es/" class="img-container-gold">
-                    <img src="assets/BRONZE/distron.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://crisanlaboral.es/" class="img-container-gold">
-                    <img src="assets/BRONZE/crisan.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="http://www.industa.com/" class="img-container-gold">
-                    <img src="assets/BRONZE/industa.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.fabory.com/es/" class="img-container-gold">
-                    <img src="assets/BRONZE/fabory.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.manpowergroup.es/" class="img-container-gold">
-                    <img src="assets/BRONZE/manpower.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://perma.es/mecanizado/" class="img-container-gold">
-                    <img src="assets/BRONZE/mecanizadosperma.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://www.supermagnete.es/" class="img-container-gold">
-                    <img src="assets/Colaboradores/supermagnete.svg" class="logo-sponsor">
-                </a>
-            </div>
-
         </div>
     </section>
 
@@ -896,43 +182,14 @@
         </div>
 
         <div class="logo-container lcg logo-container-2">
-
-            <div>
-                <a target="_blank" href="https://www.cmt.upv.es/#/" class="img-container-gold">
-                    <img src="assets/Colaboradores/motorestermicos.svg" class="logo-sponsor">
+            <div *ngFor="let sponsor of COLLABORATORS;">
+                <a target="_blank" [href]="sponsor.href" class="img-cosicainer-collaborators">
+                    <img [src]="sponsor.image" [id]="sponsor.name" class="logo-sponsor">
                 </a>
             </div>
-
-
-            <div>
-                <a target="_blank" href="http://www.etsit.upv.es/" class="img-container-gold">
-                    <img src="assets/Colaboradores/teleco.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://norelem.es/es/" class="img-container-gold">
-                    <img src="assets/Colaboradores/dm.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="" class="img-container-gold">
-                    <img src="assets/Colaboradores/norelem.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-            <div>
-                <a target="_blank" href="https://royme.com/" class="img-container-gold">
-                    <img src="assets/Colaboradores/royme.svg" class="logo-sponsor">
-                </a>
-            </div>
-
-
         </div>
     </section>
 
     <span class="back-text">Sponsors</span>
     <span class="background"></span>
 </main>
-  

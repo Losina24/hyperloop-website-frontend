@@ -1,5 +1,6 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { HeaderAnimatorService } from '../services/header-animator.service';
+import { PREMIUM_SPONSOR, GOLDEN_SPONSOR, SILVER_SPONSOR, BRONZE_SPONSOR, COLLABORATORS, Sponsor} from './sponsors_lists';
 // @ts-ignore
 import anime from 'animejs/lib/anime.es.js';
 
@@ -9,11 +10,15 @@ import anime from 'animejs/lib/anime.es.js';
   styleUrls: ['./sponsors.component.scss']
 })
 export class SponsorsComponent implements OnInit {
+  PREMIUM_SPONSOR : Array<Sponsor> = PREMIUM_SPONSOR;
+  GOLDEN_SPONSOR : Array<Sponsor> = GOLDEN_SPONSOR;
+  SILVER_SPONSOR : Array<Sponsor> = SILVER_SPONSOR;
+  COLLABORATORS : Array<Sponsor> = COLLABORATORS;
+  BRONZE_SPONSOR : Array<Sponsor> = BRONZE_SPONSOR;
 
   pageIndex: number = 0;
   transition: boolean = false;
   popup: string = '';
-
   texts = {
     en: {
       ventajas: 'Advantages',
