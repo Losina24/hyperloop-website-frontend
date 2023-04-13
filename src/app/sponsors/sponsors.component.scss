@@ -57,26 +57,36 @@ main {
 // TODO: arreglar ñapa
 #logos_gold{
     div{
-        scale : 0.7;
+        height: auto;
+        width: 10vw !important;
+        scale: 0.7;
     }
 }
 
 // TODO: arreglar ñapa
 #logos_silver{
     div{
-        scale : 0.6;
+        height: auto;
+        width: 10vw !important;
+        scale: 0.7;    
     }
 }
 
 // TODO: arreglar ñapa
 #logos_bronze{
     div {
-        scale: 0.6;
-    }
+        height: auto;
+        width: 10vw !important;
+        scale: 0.7;
+
+    } 
 }
 
+// TODO: arreglar ñapa
 #logos_collaborators{
     div{
+        height: auto;
+        width: 10vw !important;
         scale: 0.7;
     }
 }
@@ -278,104 +288,6 @@ main {
     padding-right: 2rem;
 }
 
-#die {
-    scale: 2
-}
-
-#ziur {
-    width: 80%;
-    scale: 2
-}
-
-#valenciacf {
-    width: 100%;
-    scale: 2
-}
-
-#upv {
-    width: 100%;
-    scale: 2
-}
-
-#laser {
-    width: 100%;
-    scale: 1.5
-}
-
-#we {
-    width: 70%;
-    scale:2
-}
-
-#uniweld {
-    width: 100%;
-    scale: 2
-}
-
-#coatec {
-    width: 80%;
-    scale: 2
-}
-
-#altium {
-    scale:2
-}
-
-#ansys {
-    scale:2
-}
-
-#arroz {
-    scale:2
-}
-
-#genespont {
-    scale:2
-}
-
-#segura {
-    scale:2
-}
-
-#iberia {
-    scale:2
-}
-
-#laser {
-    scale:2
-}
-
-#mundinmar {
-    scale:2
-}
-
-#noksel {
-    scale:2
-}
-
-#tsa {
-    scale:2
-}
-
-#we {
-    scale:2
-}
-
-#zeleros {
-    scale:1.5
-}
-
-
-#hp {
-    width: 100%;
-    scale:3
-}
-
-#logos-silver {
-    display: flex;
-    gap: 4rem;
-}
-
 .titles {
     margin-top: 14rem;
     height: 10rem;
@@ -458,23 +370,6 @@ h2 {
     line-height: 2.6rem;
     text-align: center;
 }
-
-/*.sponsor-link {
-    background: rgb(170,78,47);
-    background: linear-gradient(149deg, rgba(170,78,47,1) 0%, rgba(71,72,117,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    font-weight: 300;
-    width: 15rem;
-    padding: 1.4rem 2rem;
-    border: 10px solid;
-    border-image-slice: 1;
-    border-width: 1px;
-    border-image-source: linear-gradient(149deg, rgba(170,78,47,1) 0%, rgba(71,72,117,1) 100%);
-    margin: 1rem;
-    transition: .3s ease-in-out;
-}*/
 
 .sponsor-link {
     font-size: 1.8rem;
@@ -657,9 +552,6 @@ li:last-of-type {
 .logo-container-3 > #dh2 {
     width: 18%;
 }
-/* .logo-container-3 > #dh2 {
-    width: 15%;
-} */
 
 @media only screen and (max-width: 1650px) {
     .img-container {

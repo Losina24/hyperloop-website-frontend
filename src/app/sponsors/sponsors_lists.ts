@@ -8,6 +8,7 @@ export const PREMIUM_SPONSOR : Array<Sponsor> = [
     {name : "UPV", href : "https://upv.es", image : "assets/PREMIUM/upv.svg"},
     {name : "coatec", href : "http://www.coatec.net/", image : "assets/PREMIUM/coatec.svg"},
     {name : "Uniweld", href : "http://www.uni-weld.com/", image : "assets/PREMIUM/uniweld.svg"},
+    {name : "Zeleros", href : "https://www.laservalencia.com/", image : "assets/GOLD/zeleros.svg" },
 ];
 
 export const GOLDEN_SPONSOR : Array<Sponsor> = [
@@ -21,7 +22,6 @@ export const GOLDEN_SPONSOR : Array<Sponsor> = [
     { name : "Dacsa", href : "https://arrozdacsa.com/", image : "assets/GOLD/arrozdacsa.svg" },
     { name : "GeneracionEspontaea", href : "https://generacionespontanea.upv.es/", image : "assets/GOLD/generacionespontanea.svg" },
     { name : "Acerinox", href : "https://acerinox.com/es/index.html", image : "assets/GOLD/ACERINOX.svg" },
-    { name : "Fugro", href : "https://www.fugro.com/", image : "assets/GOLD/fugro.svg" },
     { name : "Fsegura", href : "https://www.fsegura.com/", image : "assets/GOLD/gruposegura.svg" },
     { name : "Mudinmar", href : "https://www.mudinmar.com/es/", image : "assets/GOLD/mundinmar.svg" },
 ];
@@ -48,6 +48,7 @@ export const SILVER_SPONSOR : Array<Sponsor> = [
     { name : "Altair", href : "https://www.altair.com.es/", image : "assets/silver/altair.svg" },
     { name : "Xeometry", href : "https://xometry.eu/es/", image : "assets/silver/xeometry.svg" },
     { name : "Speegoat", href : "https://www.speedgoat.com/", image : "assets/silver/speedgoat.svg" },
+    { name : "Thyssenkrupp", href : "https://www.thyssenkrupp.com", image : "assets/bronze/thyssen.svg" },
 ];
 
 export const BRONZE_SPONSOR : Array<Sponsor> = [
@@ -62,7 +63,6 @@ export const BRONZE_SPONSOR : Array<Sponsor> = [
     { name : "Mouser", href : "https://www.mouser.es/", image : "assets/bronze/mouser.svg" },
     { name : "Idusta", href : "http://www.industa.com/", image : "assets/bronze/industa.svg" },
     { name : "GiftCampaign", href : "https://www.giftcampaign.es/", image : "assets/bronze/gift_campaign.svg" },
-    { name : "Thyssenkrupp", href : "https://www.thyssenkrupp.com", image : "assets/bronze/thyssen.svg" },
     { name : "ValenciaCF", href : "https://www.valenciacf.com/es", image : "assets/PREMIUM/valencia.svg" },
     { name : "RedBull", href : "https://www.redbull.com/es-es/", image : "assets/Colaboradores/redbull.svg" },
 ];
